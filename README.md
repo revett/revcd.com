@@ -15,6 +15,6 @@
 
 ### Compile CSS
 
-```
-npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
-```
+[TailwindCSS](https://tailwindcss.com) is compiled using
+[PostCSS](https://postcss.org) during the [ParcelJS](https://parceljs.org) build
+process
