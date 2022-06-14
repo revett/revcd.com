@@ -1,7 +1,10 @@
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./src/**/*.{html,js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        "roboto-slab": ["Roboto Slab", "serif"],
+      },
+    },
   },
-  plugins: [],
 };
