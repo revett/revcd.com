@@ -17,4 +17,4 @@
 
 [TailwindCSS](https://tailwindcss.com) is compiled using
 [PostCSS](https://postcss.org) during the [ParcelJS](https://parceljs.org) build
-process
+process.
