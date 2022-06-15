@@ -3,6 +3,7 @@
   <head>
     <link rel="icon" type="image/png" href="../assets/favicon.png" />
     <link href="./index.css" rel="stylesheet" />
+    <script defer type="module" src="./index.js"></script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Charlie Revett (@revcd) • About</title>
@@ -11,15 +12,29 @@
       content="Personal website; Technical Lead (Go) working at Vidsy in London; Projects; Climber; Photographer"
     />
   </head>
+
   <body class="bg-slate-50 font-roboto-slab">
     <main class="container max-w-xl mx-auto px-4 py-8">
-      <img
-        src="../assets/header.jpg?as=webp"
-        alt="Window"
-        class="drop-shadow-md rounded-lg"
-      />
+      <div x-data="{ hover: false }" @mouseleave="hover = false">
+        <img
+          @mouseover="hover = true"
+          x-show="!hover"
+          src="../assets/header.jpg?as=webp"
+          alt="Window"
+          class="drop-shadow-md rounded-lg"
+        />
+        <img
+          x-show="hover"
+          src="../assets/fontainebleau.jpg?as=webp"
+          alt="Fontainebleau"
+          class="drop-shadow-md rounded-lg"
+        />
+      </div>
+
       <section class="leading-6 px-2 py-4">
-        <h1 class="font-bold pb-2 text-md">Charlie Revett</h1>
+        <h1 class="font-bold pb-2 text-md" x-on:click="alert('Hello World!')">
+          Charlie Revett
+        </h1>
         <ul class="list-disc ml-2 text-sm">
           <li class="pb-2">
             <h2>
