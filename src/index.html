@@ -13,7 +13,7 @@
     />
   </head>
 
-  <body class="bg-slate-50 font-roboto-slab">
+  <body class="bg-slate-50 font-roboto-slab leading-6">
     <main class="container max-w-xl mx-auto px-6 py-10">
       <div x-data="{ hover: false }" @mouseleave="hover = false">
         <img
@@ -31,10 +31,18 @@
         />
       </div>
 
-      <section class="leading-6 px-2 py-4">
-        <h1 class="font-bold pb-2 text-md" x-on:click="alert('Hello World!')">
-          Charlie Revett
-        </h1>
+      <header class="px-4 pt-6 pb-4 text-sm">
+        <span class="font-bold">👋 About</span>
+        <span class="px-1">•</span>
+        <span><a href="projects.html">🏗 Projects</a></span>
+        <span class="px-1">•</span>
+        <span><a href="cv.html">📇 CV</a></span>
+        <span class="px-1">•</span>
+        <span><a href="now.html">🍕 Now</a></span>
+      </header>
+
+      <section class="px-4">
+        <h1 class="font-bold pb-2 text-md">Charlie Revett</h1>
         <ul class="list-disc ml-2 text-sm">
           <li class="pb-2">
             <h2>
