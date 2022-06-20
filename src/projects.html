@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/png" href="../assets/favicon.png" />
+    <link href="./index.css" rel="stylesheet" />
+    <script defer type="module" src="./index.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Charlie Revett (@revcd) • Projects</title>
+    <meta
+      name="description"
+      content="Personal website; Technical Lead (Go) working at Vidsy in London; Projects; Climber; Photographer"
+    />
+  </head>
+
+  <body class="bg-slate-50 font-roboto-slab leading-6">
+    <main class="container max-w-xl mx-auto px-6 py-10">
+      <a href="/">
+        <div x-data="{ hover: false }" @mouseleave="hover = false">
+          <img
+            @mouseover="hover = true"
+            x-show="!hover"
+            src="../assets/header.jpg?as=webp"
+            alt="Window"
+            class="drop-shadow-md rounded-lg"
+          />
+          <img
+            x-show="hover"
+            src="../assets/fontainebleau.jpg?as=webp"
+            alt="Fontainebleau"
+            class="drop-shadow-md rounded-lg"
+          />
+        </div>
+      </a>
+
+      <header class="px-4 pt-6 pb-4 text-sm">
+        <span><a href="/">👋 About</a></span>
+        <span class="px-1">•</span>
+        <span class="font-bold">🏗 Projects</span>
+        <span class="px-1">•</span>
+        <span><a href="cv.html">📇 CV</a></span>
+        <span class="px-1">•</span>
+        <span><a href="now.html">🍕 Now</a></span>
+      </header>
+
+      <section class="px-4">
+        <h1 class="pb-2 text-md">
+          <span class="font-bold">Charlie Revett</span> - Projects
+        </h1>
+
+        <p class="text-sm">TODO</p>
+      </section>
+    </main>
+  </body>
+</html>
