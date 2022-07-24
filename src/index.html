@@ -13,25 +13,25 @@
     />
   </head>
 
-  <body class="bg-slate-50 font-roboto-slab leading-6">
-    <main class="container max-w-xl mx-auto px-6 py-10">
+  <body class="bg-neutral-900 font-roboto-slab leading-6 text-white">
+    <main class="container max-w-3xl mx-auto px-6 py-10 w-full">
       <div x-data="{ hover: false }" @mouseleave="hover = false">
         <img
           @mouseover="hover = true"
           x-show="!hover"
           src="../assets/header.jpg?as=webp"
           alt="Window"
-          class="drop-shadow-md rounded-lg"
+          class="drop-shadow-md max-w-lg rounded-lg w-full"
         />
         <img
           x-show="hover"
           src="../assets/fontainebleau.jpg?as=webp"
           alt="Fontainebleau"
-          class="drop-shadow-md rounded-lg"
+          class="drop-shadow-md max-w-lg rounded-lg w-full"
         />
       </div>
 
-      <header class="px-4 pt-6 pb-4 text-sm">
+      <header class="px-4 pt-6 pb-8">
         <span class="font-bold">👋 About</span>
         <span class="px-1">•</span>
         <span><a href="projects.html">🏗 Projects</a></span>
@@ -42,14 +42,14 @@
       </header>
 
       <section class="px-4">
-        <h1 class="font-bold pb-2 text-md">Charlie Revett</h1>
-        <ul class="list-disc ml-2 text-sm">
+        <h1 class="font-bold pb-4 text-xl">Charlie Revett</h1>
+        <ul class="list-disc ml-2">
           <li class="pb-2">
             <h2>
               Technical lead (Go) at
               <a
                 href="https://vidsy.co"
-                class="font-bold border-b-2 border-black hover:border-b-slate-50"
+                class="border-b-2 border-indigo-400 text-indigo-400"
                 >Vidsy</a
               >
               in London
@@ -58,7 +58,7 @@
           <li class="pb-2">
             <a
               href="https://github.com/revett"
-              class="font-bold border-b-2 border-black"
+              class="border-b-2 border-indigo-400 text-indigo-400"
               >Projects</a
             >
             on GitHub (@revett)
@@ -67,7 +67,7 @@
             Recent
             <a
               href="https://instagram.com/cdrev"
-              class="font-bold border-b-2 border-black"
+              class="border-b-2 border-indigo-400 text-indigo-400"
               >adventures</a
             >
             on Instagram (@cdrev)
@@ -76,7 +76,7 @@
             B&W
             <a
               href="https://instagram.com/chadexbw"
-              class="font-bold border-b-2 border-black"
+              class="border-b-2 border-indigo-400 text-indigo-400"
               >photos</a
             >
             I've recently taken (@chadexbw)
@@ -85,7 +85,7 @@
             Sport climbing and bouldering
             <a
               href="https://www.8a.nu/user/charlie-revett/bouldering"
-              class="font-bold border-b-2 border-black"
+              class="border-b-2 border-indigo-400 text-indigo-400"
               >logbook</a
             >
             (8a.nu)
@@ -93,7 +93,7 @@
           <li class="pb-2">
             <a
               href="https://twitter.com/revcd"
-              class="font-bold border-b-2 border-black"
+              class="border-b-2 border-indigo-400 text-indigo-400"
               >Twitter</a
             >
             (@revcd); not used a lot
@@ -102,14 +102,14 @@
             Natural language processing
             <a
               href="https://github.com/revett/academic-papers"
-              class="font-bold border-b-2 border-black"
+              class="border-b-2 border-indigo-400 text-indigo-400"
               >academic papers</a
             >
           </li>
           <li class="pb-2">
             <a
               href="https://www.linkedin.com/in/cdrev"
-              class="font-bold border-b-2 border-black"
+              class="border-b-2 border-indigo-400 text-indigo-400"
               >LinkedIn</a
             >
             (@cdrev)
@@ -118,21 +118,21 @@
             Coding
             <a
               href="https://www.codewars.com/users/revett"
-              class="font-bold border-b-2 border-black"
+              class="border-b-2 border-indigo-400 text-indigo-400"
               >katas</a
             >
             (@revett)
           </li>
         </ul>
 
-        <p class="pt-2 text-sm">
+        <p class="pt-2">
           Feel free to email me using
-          <span class="font-bold border-b-2 border-black"
+          <span class="border-b-2 border-indigo-400 text-indigo-400"
             >revcd at revdex.fastmail.com</span
           >; this is on
           <a
             href="https://github.com/revett/revcd.com"
-            class="font-bold border-b-2 border-black"
+            class="border-b-2 border-indigo-400 text-indigo-400"
             >GitHub</a
           >
         </p>
