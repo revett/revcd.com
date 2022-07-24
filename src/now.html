@@ -13,8 +13,8 @@
     />
   </head>
 
-  <body class="bg-slate-50 font-roboto-slab leading-6">
-    <main class="container max-w-xl mx-auto px-6 py-10">
+  <body class="bg-neutral-900 font-roboto-slab leading-6 text-white">
+    <main class="container max-w-3xl mx-auto px-6 py-10">
       <a href="/">
         <div x-data="{ hover: false }" @mouseleave="hover = false">
           <img
@@ -22,18 +22,18 @@
             x-show="!hover"
             src="../assets/header.jpg?as=webp"
             alt="Window"
-            class="drop-shadow-md rounded-lg"
+            class="drop-shadow-md max-w-lg rounded-lg"
           />
           <img
             x-show="hover"
             src="../assets/fontainebleau.jpg?as=webp"
             alt="Fontainebleau"
-            class="drop-shadow-md rounded-lg"
+            class="drop-shadow-md max-w-lg rounded-lg"
           />
         </div>
       </a>
 
-      <header class="px-4 pt-6 pb-4 text-sm">
+      <header class="px-4 pt-6 pb-8">
         <span><a href="/">👋 About</a></span>
         <span class="px-1">•</span>
         <span><a href="projects.html">🏗 Projects</a></span>
@@ -44,11 +44,11 @@
       </header>
 
       <section class="px-4">
-        <h1 class="pb-2 text-md">
+        <h1 class="pb-4 text-xl">
           <span class="font-bold">Charlie Revett</span> - Now
         </h1>
 
-        <p class="text-sm">TODO</p>
+        <p>TODO</p>
       </section>
     </main>
   </body>
