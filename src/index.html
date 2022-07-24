@@ -14,20 +14,20 @@
   </head>
 
   <body class="bg-neutral-900 font-roboto-slab leading-6 text-white">
-    <main class="container max-w-3xl mx-auto px-6 py-10">
+    <main class="container max-w-3xl mx-auto px-6 py-10 w-full">
       <div x-data="{ hover: false }" @mouseleave="hover = false">
         <img
           @mouseover="hover = true"
           x-show="!hover"
           src="../assets/header.jpg?as=webp"
           alt="Window"
-          class="drop-shadow-md max-w-lg rounded-lg"
+          class="drop-shadow-md max-w-lg rounded-lg w-full"
         />
         <img
           x-show="hover"
           src="../assets/fontainebleau.jpg?as=webp"
           alt="Fontainebleau"
-          class="drop-shadow-md max-w-lg rounded-lg"
+          class="drop-shadow-md max-w-lg rounded-lg w-full"
         />
       </div>
 
