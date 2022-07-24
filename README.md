@@ -7,6 +7,10 @@
 ### Development Server
 
 ```
+yarn
+```
+
+```
 ./node_modules/.bin/parcel src/index.html -p 80
 ```
 
