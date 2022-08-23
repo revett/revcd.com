@@ -2,8 +2,13 @@
 <html lang="en">
   <head>
     <link rel="icon" type="image/png" href="../assets/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link href="./index.css" rel="stylesheet" />
-    <script defer type="module" src="./index.js"></script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Charlie Revett (@revcd) • About</title>
@@ -14,22 +19,12 @@
   </head>
 
   <body class="bg-neutral-900 font-roboto-slab leading-6 text-white">
-    <main class="container max-w-3xl mx-auto px-6 py-10 w-full">
-      <div x-data="{ hover: false }" @mouseleave="hover = false">
-        <img
-          @mouseover="hover = true"
-          x-show="!hover"
-          src="../assets/header.jpg?as=webp"
-          alt="Window"
-          class="drop-shadow-md max-w-lg rounded-lg w-full"
-        />
-        <img
-          x-show="hover"
-          src="../assets/fontainebleau.jpg?as=webp"
-          alt="Fontainebleau"
-          class="drop-shadow-md max-w-lg rounded-lg w-full"
-        />
-      </div>
+    <main class="container max-w-3xl mx-auto px-6 pt-12 pb-16 w-full">
+      <img
+        src="../assets/header.jpg?as=webp"
+        alt="Black and white photo of Charlie in a window"
+        class="drop-shadow-md max-w-lg rounded-lg w-full"
+      />
 
       <header class="px-4 pt-6 pb-8">
         <span class="font-bold">👋 About</span>
