@@ -9,11 +9,7 @@ Codebase for my personal website.
 Start a local Node container (see [`container-node`](https://github.com/revett/dotfiles/blob/main/.aliases)), then:
 
 ```bash
-yarn
-```
-
-```bash
-./node_modules/.bin/parcel src/index.html -p 80
+yarn start
 ```
 
 ### Compile CSS
