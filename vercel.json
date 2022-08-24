@@ -3,7 +3,7 @@
   "trailingSlash": false,
   "headers": [
     {
-      "source": "/*.css",
+      "source": "/(.*).css",
       "headers": [
         {
           "key": "Cache-Control",
@@ -12,7 +12,7 @@
       ]
     },
     {
-      "source": "/*.webp",
+      "source": "/(.*).webp",
       "headers": [
         {
           "key": "Cache-Control",
