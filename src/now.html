@@ -1,14 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="icon" type="image/png" href="../assets/favicon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link href="./index.css" rel="stylesheet" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Charlie Revett (@revcd) • Now</title>
@@ -16,6 +8,30 @@
       name="description"
       content="Personal website; Technical Lead (Go) working at Vidsy in London; Projects; Climber; Photographer"
     />
+    <link rel="icon" type="image/png" href="../assets/favicon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap"
+      />
+    </noscript>
+
+    <link href="./index.css" rel="stylesheet" />
   </head>
 
   <body class="bg-neutral-900 font-roboto-slab leading-6 text-white">
