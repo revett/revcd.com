@@ -5,6 +5,9 @@ module.exports = {
       fontFamily: {
         "roboto-slab": ["Roboto Slab", "serif"],
       },
+      listStyleType: {
+        dash: '"- "',
+      },
     },
   },
 };
