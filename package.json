@@ -11,5 +11,8 @@
   },
   "scripts": {
     "start": "yarn parcel './src/*.html' -p 80"
+  },
+  "dependencies": {
+    "twemoji": "^14.0.2"
   }
 }
