@@ -21,14 +21,14 @@ class Anchor extends React.Component {
 
 Anchor.propTypes = {
   href: PropTypes.string,
-  padBefore: PropTypes.bool,
   padAfter: PropTypes.bool,
+  padBefore: PropTypes.bool,
   text: PropTypes.string.isRequired,
 };
 
 Anchor.defaultProps = {
-  padBefore: true,
   padAfter: true,
+  padBefore: true,
 };
 
 export default Anchor;
