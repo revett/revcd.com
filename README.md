@@ -23,6 +23,7 @@ yarn start
 - [ParcelJS](https://github.com/parcel-bundler/parcel) for Javascript
   compilation
 - [PostCSS](https://github.com/postcss/postcss) for CSS pre-processing
+- [React](https://github.com/facebook/react) for the UI
 - [Sharp](https://github.com/lovell/sharp) for image processing
 - [TailwindCSS](https://github.com/tailwindlabs/tailwindcss) as the CSS
   framework
