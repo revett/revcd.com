@@ -11,7 +11,7 @@
     "tailwindcss": "^3.2.1"
   },
   "scripts": {
-    "start": "yarn parcel './src/*.html' -p 80"
+    "start": "yarn parcel './src/index.html' -p 80"
   },
   "dependencies": {
     "prop-types": "^15.8.1",
