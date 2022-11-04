@@ -10,3 +10,25 @@ img.emoji {
   vertical-align: -0.1em;
   width: 1em;
 }
+
+@layer components {
+  section a {
+    @apply border-b-2 border-indigo-400 text-indigo-400;
+  }
+
+  li {
+    @apply pb-2;
+  }
+
+  li:last-child {
+    @apply pb-0;
+  }
+
+  p {
+    @apply pb-4;
+  }
+
+  ul {
+    @apply list-dash ml-3 pb-4;
+  }
+}
