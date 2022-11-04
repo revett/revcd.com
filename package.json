@@ -4,6 +4,7 @@
   "repository": "git@github.com:revett/revcd.com.git",
   "license": "MIT",
   "devDependencies": {
+    "@parcel/transformer-mdx": "2.7.0",
     "parcel": "^2.7.0",
     "postcss": "^8.4.18",
     "process": "^0.11.10",
@@ -14,6 +15,7 @@
     "start": "yarn parcel './src/index.html' -p 80"
   },
   "dependencies": {
+    "@mdx-js/react": "^1",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
