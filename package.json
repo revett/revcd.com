@@ -4,7 +4,7 @@
   "repository": "git@github.com:revett/revcd.com.git",
   "license": "MIT",
   "devDependencies": {
-    "@parcel/transformer-mdx": "2.7.0",
+    "@parcel/transformer-mdx": "2.8.1",
     "parcel": "^2.7.0",
     "postcss": "^8.4.19",
     "process": "^0.11.10",
