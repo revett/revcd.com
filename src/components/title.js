@@ -4,7 +4,7 @@ import React from "react";
 class Title extends React.Component {
   render() {
     return (
-      <h1 className=" pb-4 text-xl">
+      <h1 className="pb-4 text-xl">
         {this.props.text === undefined ? (
           <span className="font-medium">Charlie Revett</span>
         ) : (
