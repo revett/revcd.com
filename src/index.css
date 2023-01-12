@@ -43,7 +43,8 @@ img.emoji {
 }
 
 @layer components {
-  section a {
+  header p a,
+  section p a {
     @apply border-b-2 border-indigo-400 text-indigo-400;
   }
 
@@ -61,5 +62,9 @@ img.emoji {
 
   ul {
     @apply list-dash ml-3 pb-4;
+  }
+
+  .now-quote {
+    @apply border-l-4 border-slate-300 italic mb-4 pl-2 py-1.5 text-slate-300 text-sm;
   }
 }

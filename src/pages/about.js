@@ -1,6 +1,5 @@
-import AboutMDX from "./about.mdx";
+import AboutMDX from "./content/about.mdx";
 import React, { useEffect } from "react";
-import Title from "../components/title";
 
 const About = () => {
   useEffect(() => {
@@ -10,12 +9,7 @@ const About = () => {
     favicon.href = replacement.src;
   }, []);
 
-  return (
-    <div>
-      <Title />
-      <AboutMDX />
-    </div>
-  );
+  return <AboutMDX />;
 };
 
 export default About;

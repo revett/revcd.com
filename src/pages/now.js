@@ -1,6 +1,5 @@
-import NowMDX from "./now.mdx";
+import NowMDX from "./content/now.mdx";
 import React, { useEffect } from "react";
-import Title from "../components/title";
 
 const Now = () => {
   useEffect(() => {
@@ -10,12 +9,7 @@ const Now = () => {
     favicon.href = replacement.src;
   }, []);
 
-  return (
-    <div>
-      <Title text="Now" />
-      <NowMDX />
-    </div>
-  );
+  return <NowMDX />;
 };
 
 export default Now;
