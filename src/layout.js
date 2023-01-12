@@ -36,7 +36,7 @@ const Layout = () => {
         </div>
       </header>
 
-      <nav className="px-4 pt-6 pb-6">
+      <nav className="px-4 pt-6 pb-4">
         <NavItem
           emoji="👋"
           isFirst
