@@ -44,7 +44,7 @@ img.emoji {
 
 @layer components {
   header p a,
-  section p a {
+  section a {
     @apply border-b-2 border-indigo-400 text-indigo-400;
   }
 
