@@ -1,10 +1,12 @@
 import About from "./pages/about";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import CV from "./pages/cv";
-import Layout from "./pages/layout";
+import Layout from "./layout";
 import Projects from "./pages/projects";
 import Now from "./pages/now";
 import ReactDOM from "react-dom/client";
+
+// TODO: add linting.
 
 export default function App() {
   return (

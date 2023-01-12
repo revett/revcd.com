@@ -1,6 +1,5 @@
-import ProjectsMDX from "./projects.mdx";
+import ProjectsMDX from "./content/projects.mdx";
 import React, { useEffect } from "react";
-import Title from "../components/title";
 
 const Projects = () => {
   useEffect(() => {
@@ -10,12 +9,7 @@ const Projects = () => {
     favicon.href = replacement.src;
   }, []);
 
-  return (
-    <div>
-      <Title text="Projects" />
-      <ProjectsMDX />
-    </div>
-  );
+  return <ProjectsMDX />;
 };
 
 export default Projects;

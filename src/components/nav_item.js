@@ -6,8 +6,11 @@ import React from "react";
 class NavItem extends React.Component {
   render() {
     let content = (
-      <span className={this.props.onPage ? "font-medium" : null}>
-        <Emoji emoji={this.props.emoji} /> {this.props.text}
+      <span>
+        <Emoji emoji={this.props.emoji} />{" "}
+        <span className={this.props.onPage ? "font-medium" : null}>
+          {this.props.text}
+        </span>
       </span>
     );
 

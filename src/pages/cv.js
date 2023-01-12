@@ -1,6 +1,5 @@
-import CVMDX from "./cv.mdx";
+import CVMDX from "./content/cv.mdx";
 import React, { useEffect } from "react";
-import Title from "../components/title";
 
 const CV = () => {
   useEffect(() => {
@@ -10,12 +9,7 @@ const CV = () => {
     favicon.href = replacement.src;
   }, []);
 
-  return (
-    <div>
-      <Title text="CV" />
-      <CVMDX />
-    </div>
-  );
+  return <CVMDX />;
 };
 
 export default CV;
