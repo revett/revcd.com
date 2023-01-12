@@ -65,6 +65,6 @@ img.emoji {
   }
 
   .now-quote {
-    @apply border-l-4 border-slate-300 italic mb-4 pl-2 py-1.5 text-slate-300 text-sm;
+    @apply border-l-4 border-slate-300 italic mb-4 pl-2 py-1.5 text-slate-300;
   }
 }
