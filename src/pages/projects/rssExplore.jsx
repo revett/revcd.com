@@ -48,7 +48,7 @@ const RSSExplore = () => {
   const sendRequest = () => {
     axios
       .post(
-        "http://localhost:5691/youtube/convert",
+        "https://rss-explore.revcd.com/youtube/convert",
         {
           url: url,
         },
