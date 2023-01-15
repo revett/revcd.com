@@ -4,9 +4,6 @@ import CV from "./pages/cv";
 import Layout from "./layout";
 import Projects from "./pages/projects";
 import Now from "./pages/now";
-import ReactDOM from "react-dom/client";
-
-// TODO: add linting.
 
 export default function App() {
   return (
@@ -23,6 +20,3 @@ export default function App() {
     </BrowserRouter>
   );
 }
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);

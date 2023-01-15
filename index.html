@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Charlie Revett (@revcd)</title>
+
+    <link id="favicon" rel="icon" type="image/png" href="/waving-hand.png" />
+
     <meta
       name="description"
       content="Personal website; Product Engineer working at incident.io in London; Projects; Climber; Photographer"
-    />
-
-    <link
-      id="favicon"
-      rel="icon"
-      type="image/png"
-      href="../assets/waving-hand.png"
     />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,25 +31,19 @@
         href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap"
       />
     </noscript>
-
-    <link href="./index.css" rel="stylesheet" />
   </head>
   <body>
     <div id="root"></div>
 
-    <!-- 🐉 Parcel needs the images to exist for them to be included. -->
+    <!-- 🐉 Images required for hack to dynamically update favicon. -->
     <img
       id="projects-favicon"
-      class="invisible w-8"
-      src="../assets/building-construction.png"
+      style="display: none"
+      src="/building-construction.png"
     />
-    <img id="cv-favicon" class="invisible w-8" src="../assets/card-index.png" />
-    <img id="now-favicon" class="invisible w-8" src="../assets/pizza.png" />
-    <img
-      id="about-favicon"
-      class="invisible w-8"
-      src="../assets/waving-hand.png"
-    />
+    <img id="cv-favicon" style="display: none" src="/card-index.png" />
+    <img id="now-favicon" style="display: none" src="/pizza.png" />
+    <img id="about-favicon" style="display: none" src="/waving-hand.png" />
 
     <!-- https://github.com/tholman/github-corners -->
     <a
@@ -90,6 +80,6 @@
       </svg>
     </a>
 
-    <script type="module" src="index.js"></script>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

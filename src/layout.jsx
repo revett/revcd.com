@@ -1,5 +1,5 @@
-import banner from "../assets/banner.png?as=webp";
-import profile from "../assets/profile.jpg?as=webp";
+import banner from "./assets/banner.png";
+import profile from "./assets/profile.jpg";
 import { Link, Outlet } from "react-router-dom";
 import NavItem from "./components/nav_item";
 import React from "react";

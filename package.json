@@ -1,25 +1,27 @@
 {
-  "name": "revett-revcd-com",
+  "name": "revcd.com",
+  "private": true,
   "version": "0.1.0",
-  "repository": "git@github.com:revett/revcd.com.git",
-  "license": "MIT",
-  "devDependencies": {
-    "@parcel/transformer-mdx": "2.7.0",
-    "parcel": "^2.7.0",
-    "postcss": "^8.4.21",
-    "process": "^0.11.10",
-    "sharp": "^0.29.1",
-    "tailwindcss": "^3.2.4"
-  },
+  "type": "module",
   "scripts": {
-    "start": "yarn parcel './src/index.html' -p 80"
+    "dev": "vite --host 0.0.0.0 --port 80",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@mdx-js/react": "^1",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.6.2",
     "twemoji": "^14.0.2"
+  },
+  "devDependencies": {
+    "@mdx-js/rollup": "^2.2.1",
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.9",
+    "@vitejs/plugin-react": "^3.0.0",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.4",
+    "vite": "^4.0.0"
   }
 }
