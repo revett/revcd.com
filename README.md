@@ -9,7 +9,7 @@ Codebase for my personal website.
 Start a local Node container (see [`container-node`](https://github.com/revett/dotfiles/blob/main/.aliases)), then:
 
 ```
-yarn run dev
+yarn start
 ```
 
 ## Stack
