@@ -8,23 +8,16 @@ Codebase for my personal website.
 
 Start a local Node container (see [`container-node`](https://github.com/revett/dotfiles/blob/main/.aliases)), then:
 
-```bash
-yarn start
+```
+yarn run dev
 ```
 
-### Compile CSS
+## Stack
 
-[TailwindCSS](https://github.com/tailwindlabs/tailwindcss) is compiled using
-[PostCSS](https://github.com/postcss/postcss) during the
-[ParcelJS](https://github.com/parcel-bundler/parcel) build process.
-
-## Technologies
-
-- [ParcelJS](https://github.com/parcel-bundler/parcel) for Javascript
-  compilation
-- [PostCSS](https://github.com/postcss/postcss) for CSS pre-processing
-- [React](https://github.com/facebook/react) for the UI
-- [Sharp](https://github.com/lovell/sharp) for image processing
-- [TailwindCSS](https://github.com/tailwindlabs/tailwindcss) as the CSS
-  framework
-- [Vercel](https://github.com/vercel/vercel) for deployment and hosting
+- [postcss](https://github.com/postcss/postcss) - CSS pre-processing
+- [react](https://github.com/facebook/react) - UI
+- [rollup](https://github.com/rollup/rollup) - Support for
+  [MDX](https://github.com/mdx-js/mdx)
+- [tailwindcss](https://github.com/tailwindlabs/tailwindcss) - CSS framework
+- [vercel](https://github.com/vercel/vercel) - Deployment and hosting
+- [vite](https://github.com/vitejs/vite) - Bundler
