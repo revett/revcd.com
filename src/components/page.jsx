@@ -20,7 +20,13 @@ const Page = ({
     <p className="flex-1 lg:text-lg pb-0 pl-4 lg:pl-6">
       Hey, I'm <span className="text-burnt-sienna">Charlie Revett</span>. I'm a
       software engineer living in London, on the engineering team at{" "}
-      <a href="https://incident.io">incident.io</a> <Emoji emoji="🔥" />
+      <a
+        href="https://incident.io"
+        className="border-b-2 border-indigo-400 text-indigo-400"
+      >
+        incident.io
+      </a>{" "}
+      <Emoji emoji="🔥" />
     </p>
   );
   if (isProjectPage) {
@@ -28,7 +34,13 @@ const Page = ({
       <p className="flex-1 lg:text-lg pb-0 pl-4 lg:pl-6">
         Hey, I'm <span className="text-burnt-sienna">Charlie Revett</span>. I'm
         a software engineer living in London; thanks for checking out one of my{" "}
-        <Link to="/projects">open-source projects</Link> <Emoji emoji="🙏" />
+        <Link
+          to="/projects"
+          className="border-b-2 border-indigo-400 text-indigo-400"
+        >
+          open-source projects
+        </Link>{" "}
+        <Emoji emoji="🙏" />
       </p>
     );
   }
@@ -84,9 +96,9 @@ const Page = ({
         </nav>
       )}
 
-      <section className={cx("px-2", { "markdown-body": enableGithubStyling })}>
+      <div className={cx("px-2", { "markdown-body": enableGithubStyling })}>
         {children}
-      </section>
+      </div>
     </div>
   );
 };

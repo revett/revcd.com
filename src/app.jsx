@@ -1,4 +1,7 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import "./index.css";
 import Layout from "./layout";
 import About from "./pages/about";
 import CV from "./pages/cv";
@@ -6,7 +9,7 @@ import Now from "./pages/now";
 import Projects from "./pages/projects";
 import RSSExplore from "./pages/projects/rssExplore";
 
-export default function App() {
+function App() {
   return (
     <BrowserRouter>
       <Routes>
@@ -27,3 +30,9 @@ export default function App() {
     </BrowserRouter>
   );
 }
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);

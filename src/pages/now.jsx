@@ -22,7 +22,9 @@ const Now = () => {
       <p className="border-l-4 border-slate-300 italic mb-4 pl-2 py-1.5 text-slate-300">
         Covering Summer / Autumn 2022
       </p>
-      <NowMDX />
+      <section>
+        <NowMDX />
+      </section>
     </Page>
   );
 };
