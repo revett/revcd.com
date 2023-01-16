@@ -3,8 +3,9 @@ import axios from "axios";
 import cx from "classnames";
 import Page from "../../components/page";
 
-const resultEnumSuccess = "success";
 const resultEnumError = "error";
+const resultEnumPending = "pending";
+const resultEnumSuccess = "success";
 
 const RSSExplore = () => {
   useEffect(() => {
@@ -46,6 +47,11 @@ const RSSExplore = () => {
   };
 
   const sendRequest = () => {
+    setResult({
+      type: resultEnumPending,
+      value: null,
+    });
+
     axios
       .post(
         "https://rss-explore.revcd.com/youtube/convert",
@@ -80,16 +86,21 @@ const RSSExplore = () => {
         </p>
       </div>
 
-      <div>
+      <div className="border-2 border-slate-700 pb-5 pt-4 px-4 rounded-lg">
         <h2 className="font-medium mb-3 text-lg">
           YouTube URL to Channel RSS Feed
         </h2>
-        <div className="pl-2">
+
+        <div>
           <p className="mb-2 pb-0">
             Generate the YouTube channel RSS feed from a YouTube video URL.
           </p>
 
-          <div className="flex mb-2">
+          <div
+            className={cx("flex", {
+              "mb-2": result.type && result.type !== resultEnumPending,
+            })}
+          >
             <input
               type="url"
               placeholder="e.g. https://youtube.com/watch?v=7LICrnxWd38"
@@ -97,17 +108,18 @@ const RSSExplore = () => {
               required
               onChange={handleChange}
               onKeyDown={handleKeyDown}
-              className="bg-white flex-1 outline-none px-3 py-3 rounded text-black w-full"
+              className="bg-white flex-1 outline-none px-3 py-3 rounded-lg text-black w-full"
             />
             <button
-              className="bg-violet-800 ml-2 px-3 py-3 rounded text-white"
+              className="bg-slate-700 ml-2 px-3 py-3 rounded-lg text-white"
               onClick={handleClick}
+              disabled={result.type === resultEnumPending}
             >
               Generate
             </button>
           </div>
 
-          {result.type && (
+          {result.type && result.type !== resultEnumPending && (
             <div
               className={cx(
                 "flex",
@@ -116,7 +128,7 @@ const RSSExplore = () => {
                 "h-12",
                 "overflow-x-auto",
                 "px-3",
-                "rounded",
+                "rounded-lg",
                 "text-sm",
                 "text-white",
                 "w-full",
