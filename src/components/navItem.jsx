@@ -1,14 +1,20 @@
-import Emoji from "./emoji";
+import React from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
-import React from "react";
+import cx from "classnames";
+import Emoji from "./emoji";
 
 class NavItem extends React.Component {
   render() {
     let content = (
       <span>
         <Emoji emoji={this.props.emoji} />{" "}
-        <span className={this.props.onPage ? "font-medium" : null}>
+        <span
+          className={cx({
+            "font-medium": this.props.onPage,
+            "hover:text-indigo-400": !this.props.onPage,
+          })}
+        >
           {this.props.text}
         </span>
       </span>

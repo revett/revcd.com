@@ -21,7 +21,9 @@ const Projects = () => {
 
   return (
     <Page>
-      <ProjectsMDX />
+      <section>
+        <ProjectsMDX />
+      </section>
     </Page>
   );
 };

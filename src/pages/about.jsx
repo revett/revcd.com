@@ -19,7 +19,9 @@ const About = () => {
 
   return (
     <Page>
-      <AboutMDX />
+      <section>
+        <AboutMDX />
+      </section>
     </Page>
   );
 };

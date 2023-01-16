@@ -42,25 +42,37 @@ img.emoji {
   width: 1em;
 }
 
+/* ℹ️ <section> is used to wrap an MDX import and apply styles. */
 @layer components {
-  header p a,
   section a {
     @apply border-b-2 border-indigo-400 text-indigo-400;
   }
 
-  li {
+  section li {
     @apply pb-2;
   }
 
-  li:last-child {
+  section li:last-child {
     @apply pb-0;
   }
 
-  p {
+  /* Used on the /now page */
+  section ol {
+    @apply list-dash ml-3 pb-4;
+  }
+
+  section p {
     @apply pb-4;
   }
 
-  ul {
-    @apply list-dash ml-3 pb-4;
+  section svg {
+    @apply inline;
+    margin-bottom: 3px;
+    margin-right: 4px;
+  }
+
+  /* Used on the /about page */
+  section ul {
+    @apply pb-4;
   }
 }
