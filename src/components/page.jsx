@@ -72,7 +72,7 @@ const Page = ({
       </header>
 
       {!isProjectPage && (
-        <nav className="px-2 pb-4">
+        <nav className="pb-4 px-2">
           <NavItem
             emoji="👋"
             isFirst
