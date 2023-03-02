@@ -20,7 +20,9 @@ const About = () => {
   return (
     <Page>
       <section>
-        <AboutMDX />
+        <div className="about-page">
+          <AboutMDX />
+        </div>
       </section>
     </Page>
   );

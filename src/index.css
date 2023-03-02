@@ -48,16 +48,11 @@ img.emoji {
     @apply border-b-2 border-indigo-400 text-indigo-400;
   }
 
-  section li {
-    @apply pb-2;
+  section ul {
+    @apply pb-4 space-y-2;
   }
 
-  section li:last-child {
-    @apply pb-0;
-  }
-
-  /* Used on the /now page */
-  section ol {
+  .now-page ul {
     @apply list-dash ml-3 pb-4;
   }
 
@@ -65,14 +60,24 @@ img.emoji {
     @apply pb-4;
   }
 
-  section svg {
+  .about-page li svg {
     @apply inline;
-    margin-bottom: 3px;
-    margin-right: 4px;
+    margin-right: 8px;
   }
 
-  /* Used on the /about page */
-  section ul {
-    @apply pb-4;
+  .about-page li {
+    @apply flex;
+  }
+
+  .about-page li svg {
+    @apply flex-shrink-0 mt-1;
+  }
+
+  .about-page ul {
+    @apply list-inside;
+  }
+
+  .now-page ul {
+    @apply list-dash ml-3 pb-4;
   }
 }
