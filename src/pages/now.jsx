@@ -23,7 +23,9 @@ const Now = () => {
         Covering Summer / Autumn 2022
       </p>
       <section>
-        <NowMDX />
+        <div className="now-page">
+          <NowMDX />
+        </div>
       </section>
     </Page>
   );
