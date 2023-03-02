@@ -22,7 +22,7 @@ const Page = ({
       software engineer living in London, on the engineering team at{" "}
       <a
         href="https://incident.io"
-        className="border-b-2 border-indigo-400 text-indigo-400"
+        className="border-b-2 border-indigo-400 text-indigo-400 hover:bg-indigo-400 hover:text-white"
       >
         incident.io
       </a>{" "}

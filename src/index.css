@@ -45,7 +45,7 @@ img.emoji {
 /* ℹ️ <section> is used to wrap an MDX import and apply styles. */
 @layer components {
   section a {
-    @apply border-b-2 border-indigo-400 text-indigo-400;
+    @apply border-b-2 border-indigo-400 text-indigo-400 hover:bg-indigo-400 hover:text-white;
   }
 
   section ul {
