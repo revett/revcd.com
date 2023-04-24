@@ -17,8 +17,4 @@
     <loc>https://revcd.com/now</loc>
     <changefreq>monthly</changefreq>
   </url>
-  <url>
-    <loc>https://revcd.com/projects/rss-explore</loc>
-    <changefreq>monthly</changefreq>
-  </url>
 </urlset>
