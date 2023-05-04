@@ -1,3 +1,9 @@
+> ⚠️ Project is **archived** (May 2023).
+>
+> I have switched to using [Super](https://super.so) in combination with 
+> [Notion](https://www.notion.so) to remove maintenance overhead and make
+> it easier to write/publish blog posts.
+
 # revcd.com
 
 Codebase for my personal website.
