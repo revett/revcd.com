@@ -2,28 +2,21 @@
   "name": "revcd.com",
   "private": true,
   "version": "0.1.0",
-  "type": "module",
   "scripts": {
-    "start": "vite --host 0.0.0.0 --port 80",
-    "build": "vite build",
-    "preview": "vite preview"
+    "dev": "next dev -p 80",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "classnames": "^2.3.2",
+    "next": "^14.0.2",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-icons": "^4.7.1",
-    "react-router-dom": "^6.8.0",
-    "twemoji": "^14.0.2"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@mdx-js/rollup": "^2.2.1",
-    "@types/react": "^18.0.27",
-    "@types/react-dom": "^18.0.9",
-    "@vitejs/plugin-react": "^3.0.0",
-    "postcss": "^8.4.21",
-    "tailwindcss": "^3.2.4",
-    "vite": "^4.0.0"
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5"
   }
 }
