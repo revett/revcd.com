@@ -1,7 +1,7 @@
 import Image from "next/image";
 import PropTypes from "prop-types";
 
-const Card = ({ imageUrl, href, title, subtitle, label }) => {
+const Card = ({ imageUrl, href, title, subtitle, label, isLast }) => {
   return (
     <a
       className="flex gap-x-4 px-4 -mx-4 pt-4 rounded-xl border-none hover:bg-neutral-900 group"
@@ -20,7 +20,11 @@ const Card = ({ imageUrl, href, title, subtitle, label }) => {
           />
         </div>
       </div>
-      <div className="flex flex-col text-base border-b border-neutral-900 flex-auto pb-4 group-hover:border-transparent text-neutral-300">
+      <div
+        className={`flex flex-col text-base flex-auto pb-4 group-hover:border-transparent text-neutral-300 ${
+          isLast ? "" : "border-b border-neutral-900"
+        }`}
+      >
         <div>{title}</div>
         <div className="text-neutral-500 flex justify-between gap-x-2 items-center">
           <div>{subtitle}</div>
@@ -37,6 +41,7 @@ Card.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
   label: PropTypes.string,
+  isLast: PropTypes.bool,
 };
 
 export default Card;

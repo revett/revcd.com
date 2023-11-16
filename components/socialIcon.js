@@ -1,12 +1,15 @@
 import PropTypes from "prop-types";
 
 const SocialIcon = ({ href, icon }) => {
+  const IconComponent = icon.type;
+
   return (
     <a
       href={href}
       className="p-3 rounded-xl hover:bg-neutral-900 border-none text-neutral-200"
     >
-      {icon}
+      {/* {icon} */}
+      <IconComponent className={"h-6 w-6 text-current"} />
     </a>
   );
 };

@@ -1,7 +1,7 @@
+import { Button, ButtonTheme } from "../components/button";
+import Card from "../components/card";
 import Link from "../components/link";
 import Paragraph from "../components/paragraph";
-import SocialIcon from "../components/socialIcon";
-import Card from "../components/card";
 import {
   RiGithubLine,
   RiInstagramLine,
@@ -10,9 +10,6 @@ import {
 } from "react-icons/ri";
 import { GiMountaintop } from "react-icons/gi";
 import { TbNotebook } from "react-icons/tb";
-
-// TODO - Change components to use const.
-// TODO - Linting.
 
 const Page = () => {
   return (
@@ -29,10 +26,10 @@ const Page = () => {
           </h1>
 
           <Paragraph>
-            As a senior product engineer at{" "}
-            <Link href="https://incident.io" text="incident.io" />, my days are
-            filled with engaging customer conversations and crafting impactful
-            product features that streamline incident management for our users.
+            At <Link href="https://incident.io" text="incident.io" />, my days
+            are filled with engaging customer conversations and crafting
+            impactful product features that streamline incident management for
+            our users.
           </Paragraph>
 
           <Paragraph>
@@ -45,32 +42,31 @@ const Page = () => {
 
           <Paragraph>
             I thrive on creating features that not only solve problems but also
-            bring delight. When I'm not working, you'll find me exploring the
-            great outdoors or tinkering on passion projects at{" "}
+            spark joy. When I'm not working, you'll find me exploring the great
+            outdoors or tinkering on side projects at{" "}
             <Link href="https://8thpark.com" text="8thpark.com" />.
           </Paragraph>
 
           {/* Links */}
+          {/* TODO - Twitter button */}
           <div className="flex -ml-2 mt-6 items-center">
-            <SocialIcon
+            <Button
               href="https://twitter.com/revcd"
-              icon={<RiTwitterXLine className="h-6 w-6 text-current" />}
+              text="Follow @revcd"
+              icon={<RiTwitterXLine />}
             />
-            <SocialIcon
-              href="https://github.com/revett"
-              icon={<RiGithubLine className="h-6 w-6 text-current" />}
-            />
-            <SocialIcon
+            <Button href="https://github.com/revett" icon={<RiGithubLine />} />
+            <Button
               href="https://instagram.com/cdrev"
-              icon={<RiInstagramLine className="h-6 w-6 text-current" />}
+              icon={<RiInstagramLine />}
             />
-            <SocialIcon
+            <Button
               href="https://linkedin.com/in/cdrev"
-              icon={<RiLinkedinFill className="h-6 w-6 text-current" />}
+              icon={<RiLinkedinFill />}
             />
-            <SocialIcon
+            <Button
               href="https://www.ukclimbing.com/logbook/showlog.php?id=216572&sort=g&country=&crag=&gradetype=&partners=0&year=&season=&nresults=100&pg=1"
-              icon={<TbNotebook className="h-6 w-6 text-current" />}
+              icon={<TbNotebook />}
             />
           </div>
         </div>
@@ -100,6 +96,7 @@ const Page = () => {
           title="BBC News"
           subtitle="Senior Software Engineer"
           label="2014 - 2016"
+          isLast={true}
         />
       </section>
 
@@ -112,6 +109,7 @@ const Page = () => {
           href="https://github.com/revett/rss-explore"
           title="RSS Explore"
           subtitle="Tools to help you easily find and manage RSS feeds"
+          isLast={true}
         />
       </section>
     </main>
