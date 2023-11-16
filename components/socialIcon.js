@@ -1,11 +1,6 @@
 import PropTypes from "prop-types";
 
-SocialIcon.propTypes = {
-  href: PropTypes.string.isRequired,
-  icon: PropTypes.element.isRequired,
-};
-
-export default function SocialIcon({ href, icon }) {
+const SocialIcon = ({ href, icon }) => {
   return (
     <a
       href={href}
@@ -14,4 +9,11 @@ export default function SocialIcon({ href, icon }) {
       {icon}
     </a>
   );
-}
+};
+
+SocialIcon.propTypes = {
+  href: PropTypes.string.isRequired,
+  icon: PropTypes.element.isRequired,
+};
+
+export default SocialIcon;

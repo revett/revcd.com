@@ -9,20 +9,19 @@ import {
   RiTwitterXLine,
 } from "react-icons/ri";
 import { GiMountaintop } from "react-icons/gi";
-import { TbTrees } from "react-icons/tb";
-import Image from "next/image";
+import { TbNotebook } from "react-icons/tb";
 
-export default function Page() {
+// TODO - Change components to use const.
+// TODO - Linting.
+
+const Page = () => {
   return (
     <main className="text-lg">
       {/* Introduction & Links */}
       <section className="flex gap-x-4">
         <div className="flex flex-col">
           {/* Introduction */}
-          <div>
-            {/* TODO - Better icon */}
-            <TbTrees className="w-9 h-9 mb-8 mt-10" />
-          </div>
+          <GiMountaintop className="w-9 h-9 mb-8 mt-10" />
 
           <h1 className="mt-2">
             <span className="font-semibold">Charlie Revett</span> is a software
@@ -48,11 +47,10 @@ export default function Page() {
             I thrive on creating features that not only solve problems but also
             bring delight. When I'm not working, you'll find me exploring the
             great outdoors or tinkering on passion projects at{" "}
-            <Link href="https://wildgrovelabs.com" text="wildgrovelabs.com" />.
+            <Link href="https://8thpark.com" text="8thpark.com" />.
           </Paragraph>
 
           {/* Links */}
-          {/* TODO - Toasts for these */}
           <div className="flex -ml-2 mt-6 items-center">
             <SocialIcon
               href="https://twitter.com/revcd"
@@ -72,7 +70,7 @@ export default function Page() {
             />
             <SocialIcon
               href="https://www.ukclimbing.com/logbook/showlog.php?id=216572&sort=g&country=&crag=&gradetype=&partners=0&year=&season=&nresults=100&pg=1"
-              icon={<GiMountaintop className="h-6 w-6 text-current" />}
+              icon={<TbNotebook className="h-6 w-6 text-current" />}
             />
           </div>
         </div>
@@ -118,4 +116,6 @@ export default function Page() {
       </section>
     </main>
   );
-}
+};
+
+export default Page;

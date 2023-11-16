@@ -24,7 +24,7 @@ const Card = ({ imageUrl, href, title, subtitle, label }) => {
         <div>{title}</div>
         <div className="text-neutral-500 flex justify-between gap-x-2 items-center">
           <div>{subtitle}</div>
-          <div className="text-neutral-500">{label}</div>
+          {label && <div className="text-neutral-500">{label}</div>}
         </div>
       </div>
     </a>
@@ -36,7 +36,7 @@ Card.propTypes = {
   href: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
-  label: PropTypes.string.isRequired,
+  label: PropTypes.string,
 };
 
 export default Card;

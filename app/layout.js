@@ -12,7 +12,7 @@ const font = Nunito({
   variable: "--font-nunito",
 });
 
-export default function RootLayout({ children }) {
+const RootLayout = ({ children }) => {
   return (
     <html lang="en">
       <body className="flex bg-neutral-950">
@@ -24,4 +24,6 @@ export default function RootLayout({ children }) {
       </body>
     </html>
   );
-}
+};
+
+export default RootLayout;
