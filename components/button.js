@@ -5,12 +5,23 @@ import { Icon, IconTheme } from "./icon";
 
 const Button = ({ href, icon, text, theme }) => {
   const styles = cx(
-    "p-3 rounded-xl text-neutral-200 duration-200 shadow-2xl transition-colors border-2 flex items-center hover:border-neutral-500",
+    // Spacing.
+    "p-3 rounded-xl flex items-center",
+
+    // Borders.
+    "border-2 hover:border-neutral-500",
+
+    // Animations.
+    "transition-colors duration-200 ease-in-out",
+
+    // Shadows.
+    "hover:shadow hover:shadow-neutral-800",
+
+    // Themes.
     {
-      "hover:bg-neutral-900 border-transparent": theme === ButtonTheme.Primary,
-    },
-    {
-      "bg-neutral-900 border-neutral-700": theme === ButtonTheme.Secondary,
+      "border-transparent hover:bg-neutral-900": theme === ButtonTheme.Primary,
+      "bg-neutral-900 border-neutral-700 shadow shadow-neutral-800":
+        theme === ButtonTheme.Secondary,
     }
   );
 
