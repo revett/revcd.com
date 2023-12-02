@@ -13,8 +13,8 @@ const Container = ({ children }) => {
 
   return (
     <main className={styles}>
-      <div className="mx-auto">
-        <div className="md:max-w-[640px] m-6 md:m-20">{children}</div>
+      <div className="mx-auto w-full md:max-w-[640px]">
+        <div className="mx-8 my-12 md:m-20">{children}</div>
       </div>
     </main>
   );
