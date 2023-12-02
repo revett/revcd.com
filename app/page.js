@@ -15,12 +15,12 @@ import Link from "../components/link";
 import Paragraph from "../components/paragraph";
 import Section from "../components/section";
 import { Icon, IconTheme } from "../components/icon";
+import Heading from "../components/heading";
+import Footer from "../components/footer";
 
 // TODO: Tooltips.
 // TODO: Add posts.
 // TODO: Add RSS.
-// TODO: Add copyright.
-// TODO: Update README.
 // TODO: Add analytics
 // TODO: 404 page
 // TODO: https://nextjs.org/docs/app/building-your-application/optimizing
@@ -28,17 +28,14 @@ import { Icon, IconTheme } from "../components/icon";
 const Page = () => {
   return (
     <Container>
-      {/* Introduction & Links */}
+      {/* Introduction */}
       <Section>
-        {/* Introduction */}
         <Icon id={<GiMountaintop />} theme={IconTheme.PageTitle} />
 
-        {/* TODO: Change to component */}
-        {/* TODO: Check spacing */}
-        <h1 className="mt-2">
+        <Heading level={1} isForSection={false}>
           <span className="font-semibold">Charlie Revett</span> is a software
           engineer, living in London.
-        </h1>
+        </Heading>
 
         <Paragraph>
           At <Link href="https://incident.io" text="incident.io" />, my days are
@@ -95,9 +92,8 @@ const Page = () => {
         </ButtonGroup>
       </Section>
 
-      {/* Work */}
       <Section>
-        <h3 className="text-neutral-200 mb-2 font-semibold">Work</h3>
+        <Heading level={2}>Work</Heading>
 
         <Card
           imageUrl="/work-incident-icon.png"
@@ -123,9 +119,8 @@ const Page = () => {
         />
       </Section>
 
-      {/* Projects */}
       <Section>
-        <h3 className="text-neutral-200 mb-2 font-semibold">Projects</h3>
+        <Heading level={2}>Projects</Heading>
 
         <Card
           imageUrl="/project-rss-explore-icon.png"
@@ -136,9 +131,8 @@ const Page = () => {
         />
       </Section>
 
-      {/* Posts */}
       <Section>
-        <h3 className="text-neutral-200 mb-2 font-semibold">Posts</h3>
+        <Heading level={2}>Posts</Heading>
 
         {/* TODO: Use internal routing */}
         <Card
@@ -174,6 +168,8 @@ const Page = () => {
           isLast={true}
         />
       </Section>
+
+      <Footer />
     </Container>
   );
 };

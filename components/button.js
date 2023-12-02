@@ -3,15 +3,13 @@ import PropTypes from "prop-types";
 import { Icon, IconTheme } from "./icon";
 
 const Button = ({ href, icon, text, theme }) => {
-  const IconComponent = icon.type;
-
   const styles = cx(
-    "p-3 rounded-xl text-neutral-200 duration-200 shadow-2xl transition-colors border-2 flex items-center hover:border-neutral-400",
+    "p-3 rounded-xl text-neutral-200 duration-200 shadow-2xl transition-colors border-2 flex items-center hover:border-neutral-500",
     {
-      "hover:bg-neutral-800 border-transparent": theme === ButtonTheme.Primary,
+      "hover:bg-neutral-900 border-transparent": theme === ButtonTheme.Primary,
     },
     {
-      "bg-neutral-800 border-neutral-600": theme === ButtonTheme.Secondary,
+      "bg-neutral-900 border-neutral-700": theme === ButtonTheme.Secondary,
     }
   );
 

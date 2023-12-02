@@ -9,10 +9,7 @@ const font = Nunito({
 });
 
 const Container = ({ children }) => {
-  const styles = cx(
-    font.variable,
-    "flex bg-neutral-950 font-serif text-neutral-200 h-screen"
-  );
+  const styles = cx(font.variable, "flex font-serif text-neutral-200");
 
   return (
     <main className={styles}>

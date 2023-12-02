@@ -4,10 +4,10 @@ import PropTypes from "prop-types";
 const Card = ({ imageUrl, href, title, subtitle, label, isLast }) => {
   return (
     <a
-      className="flex gap-x-4 px-4 -mx-4 pt-4 rounded-lg border-none hover:bg-neutral-900 group"
+      className="flex gap-x-4 px-4 -mx-4 pt-4 rounded-xl border-none hover:bg-neutral-900 group"
       href={href}
     >
-      <div className="bg-neutral-800 w-9 h-9 rounded-lg mt-0.5 flex-shrink-0 shadow-shorter overflow-hidden">
+      <div className="bg-neutral-700 w-9 h-9 mt-0.5 rounded-xl flex-shrink-0 shadow-shorter overflow-hidden">
         <div className="text-neutral-400 font-semibold flex justify-center items-center h-full">
           <Image
             loading="lazy"
