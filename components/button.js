@@ -1,5 +1,6 @@
-import PropTypes from "prop-types";
 import cx from "classnames";
+import PropTypes from "prop-types";
+import { Icon, IconTheme } from "./icon";
 
 const Button = ({ href, icon, text, theme }) => {
   const IconComponent = icon.type;
@@ -16,7 +17,7 @@ const Button = ({ href, icon, text, theme }) => {
 
   return (
     <a href={href} className={styles}>
-      <IconComponent className="h-6 w-6 text-current inline-block" />
+      <Icon id={icon} theme={IconTheme.Button} />
       {text && <span className="pl-2">{text}</span>}
     </a>
   );
