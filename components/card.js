@@ -1,6 +1,7 @@
-import Image from "next/image";
-import Link from "next/link";
-import PropTypes from "prop-types";
+import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import PropTypes from 'prop-types';
 
 const Card = ({ imageUrl, href, title, subtitle, label, isLast }) => {
   return (
@@ -23,7 +24,7 @@ const Card = ({ imageUrl, href, title, subtitle, label, isLast }) => {
       </div>
       <div
         className={`flex flex-col flex-auto pb-4 group-hover:border-transparent text-neutral-300 ${
-          isLast ? "" : "border-b border-neutral-900"
+          isLast ? '' : 'border-b border-neutral-900'
         }`}
       >
         <div>{title}</div>

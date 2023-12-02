@@ -1,28 +1,29 @@
-import cx from "classnames";
-import Link from "next/link";
-import PropTypes from "prop-types";
-import { Icon, IconTheme } from "./icon";
+import React from 'react';
+import cx from 'classnames';
+import Link from 'next/link';
+import PropTypes from 'prop-types';
+import { Icon, IconTheme } from './icon';
 
 const Button = ({ href, icon, text, theme }) => {
   const styles = cx(
     // Spacing.
-    "p-3 rounded-xl flex items-center",
+    'p-3 rounded-xl flex items-center',
 
     // Borders.
-    "border-2 hover:border-neutral-500",
+    'border-2 hover:border-neutral-500',
 
     // Animations.
-    "transition-colors duration-200 ease-in-out",
+    'transition-colors duration-200 ease-in-out',
 
     // Shadows.
-    "hover:shadow hover:shadow-neutral-800",
+    'hover:shadow hover:shadow-neutral-800',
 
     // Themes.
     {
-      "border-transparent hover:bg-neutral-900": theme === ButtonTheme.Primary,
-      "bg-neutral-900 border-neutral-700 shadow shadow-neutral-800":
+      'border-transparent hover:bg-neutral-900': theme === ButtonTheme.Primary,
+      'bg-neutral-900 border-neutral-700 shadow shadow-neutral-800':
         theme === ButtonTheme.Secondary,
-    }
+    },
   );
 
   return (
@@ -34,8 +35,8 @@ const Button = ({ href, icon, text, theme }) => {
 };
 
 const ButtonTheme = Object.freeze({
-  Primary: "primary",
-  Secondary: "secondary",
+  Primary: 'primary',
+  Secondary: 'secondary',
 });
 
 Button.propTypes = {

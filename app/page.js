@@ -1,27 +1,21 @@
-import { GiMountaintop } from "react-icons/gi";
-import {
-  RiGithubLine,
-  RiInstagramLine,
-  RiLinkedinFill,
-  RiTwitterXLine,
-} from "react-icons/ri";
-import { TbNotebook } from "react-icons/tb";
+import React from 'react';
+import { GiMountaintop } from 'react-icons/gi';
+import { RiGithubLine, RiInstagramLine, RiLinkedinFill, RiTwitterXLine } from 'react-icons/ri';
+import { TbNotebook } from 'react-icons/tb';
 
-import { Button, ButtonTheme } from "../components/button";
-import ButtonGroup from "../components/buttonGroup";
-import Card from "../components/card";
-import Container from "../components/container";
-import Link from "../components/link";
-import Paragraph from "../components/paragraph";
-import Section from "../components/section";
-import { Icon, IconTheme } from "../components/icon";
-import Heading from "../components/heading";
-import Footer from "../components/footer";
+import { Button, ButtonTheme } from '../components/button';
+import ButtonGroup from '../components/buttonGroup';
+import Card from '../components/card';
+import Container from '../components/container';
+import Link from '../components/link';
+import Paragraph from '../components/paragraph';
+import Section from '../components/section';
+import { Icon, IconTheme } from '../components/icon';
+import Heading from '../components/heading';
+import Footer from '../components/footer';
 
-// TODO: Tooltips.
 // TODO: Add posts.
 // TODO: Add RSS.
-// TODO: Add analytics
 
 const Page = () => {
   return (
@@ -30,32 +24,26 @@ const Page = () => {
       <Section>
         <Icon id={<GiMountaintop />} theme={IconTheme.PageTitle} />
         <Heading level={1} isForSection={false}>
-          <span className="font-semibold">Charlie Revett</span> is a software
-          engineer, living in London.
+          <span className="font-semibold">Charlie Revett</span> is a software engineer, living in
+          London.
         </Heading>
         <Paragraph>
-          At <Link href="https://incident.io" text="incident.io" />, my days are
-          filled with customer conversations and building product features that
-          streamline incident management for our users.
+          At <Link href="https://incident.io" text="incident.io" />, my days are filled with
+          customer conversations and building product features that streamline incident management
+          for our users.
         </Paragraph>
         <Paragraph>
-          Previously, I led the technical vision at{" "}
-          <Link href="https://vidsy.co" text="vidsy.co" /> as CTO and played a
-          key role in shaping the digital experience of{" "}
-          <Link href="https://bbc.co.uk/news" text="bbc.com/news" /> as a senior
-          software engineer.
+          Previously, I led the technical vision at <Link href="https://vidsy.co" text="vidsy.co" />{' '}
+          as CTO and played a key role in shaping the digital experience of{' '}
+          <Link href="https://bbc.co.uk/news" text="bbc.com/news" /> as a senior software engineer.
         </Paragraph>
         <Paragraph>
-          I enjoy creating products that not only solve problems but also spark
-          joy. When not working, you'll find me exploring the great outdoors or
-          building apps at <Link href="https://8thpark.com" text="8thpark" />.
+          I enjoy creating products that not only solve problems but also spark joy. When not
+          working, you&apos;ll find me exploring the great outdoors or building apps at{' '}
+          <Link href="https://8thpark.com" text="8thpark" />.
         </Paragraph>
         <Paragraph>
-          Say{" "}
-          <Link
-            href="mailto:hi@revdex.fastmail.com"
-            text="hi@revdex.fastmail.com"
-          />
+          Say <Link href="mailto:hi@revdex.fastmail.com" text="hi@revdex.fastmail.com" />
         </Paragraph>
       </Section>
       {/* Links */}
@@ -68,14 +56,8 @@ const Page = () => {
             theme={ButtonTheme.Secondary}
           />
           <Button href="https://github.com/revett" icon={<RiGithubLine />} />
-          <Button
-            href="https://instagram.com/cdrev"
-            icon={<RiInstagramLine />}
-          />
-          <Button
-            href="https://linkedin.com/in/cdrev"
-            icon={<RiLinkedinFill />}
-          />
+          <Button href="https://instagram.com/cdrev" icon={<RiInstagramLine />} />
+          <Button href="https://linkedin.com/in/cdrev" icon={<RiLinkedinFill />} />
           <Button
             href="https://www.ukclimbing.com/logbook/showlog.php?id=216572&sort=g&country=&crag=&gradetype=&partners=0&year=&season=&nresults=100&pg=1"
             icon={<TbNotebook />}

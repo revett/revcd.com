@@ -1,4 +1,5 @@
-import Section from "./section";
+import React from 'react';
+import Section from './section';
 
 const Footer = () => {
   const startingYear = 2022;

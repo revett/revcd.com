@@ -1,7 +1,8 @@
-"use client";
+'use client';
 
-import "./globals.css";
-import { ErrorPage, ErrorType } from "../components/errorPage";
+import React from 'react';
+import './globals.css';
+import { ErrorPage, ErrorType } from '../components/errorPage';
 
 const GlobalError = () => {
   return (

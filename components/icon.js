@@ -1,4 +1,5 @@
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const Icon = ({ id, theme }) => {
   const IconComponent = id.type;
@@ -17,8 +18,8 @@ const Icon = ({ id, theme }) => {
 };
 
 const IconTheme = Object.freeze({
-  Button: "button",
-  PageTitle: "pageTitle",
+  Button: 'button',
+  PageTitle: 'pageTitle',
 });
 
 Icon.propTypes = {
