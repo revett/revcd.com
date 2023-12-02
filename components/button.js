@@ -22,6 +22,7 @@ const Button = ({ href, icon, text, theme }) => {
       "border-transparent hover:bg-neutral-900": theme === ButtonTheme.Primary,
       "bg-neutral-900 border-neutral-700 shadow shadow-neutral-800":
         theme === ButtonTheme.Secondary,
+      "px-4 py-3": text,
     }
   );
 
