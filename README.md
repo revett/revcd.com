@@ -1,6 +1,13 @@
 # revcd.com
 
-Codebase for my personal website.
+Personal website.
+
+## Stack
+
+- React
+- Next.js
+- Tailwind
+- Vercel
 
 ## Local
 
@@ -15,3 +22,7 @@ yarn
 ```
 yarn dev
 ```
+
+## Credits
+
+- [@almonk](https://twitter.com/almonk) for design inspiration
