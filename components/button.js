@@ -6,12 +6,12 @@ const Button = ({ href, icon, text, theme }) => {
   const IconComponent = icon.type;
 
   const styles = cx(
-    "p-3 rounded-lg text-neutral-200 duration-200 shadow-2xl transition-colors border-2 border-transparent hover:border-neutral-100 flex items-center",
+    "p-3 rounded-xl text-neutral-200 duration-200 shadow-2xl transition-colors border-2 flex items-center hover:border-neutral-400",
     {
-      "hover:bg-neutral-800": theme === ButtonTheme.Primary,
+      "hover:bg-neutral-800 border-transparent": theme === ButtonTheme.Primary,
     },
     {
-      "bg-neutral-800": theme === ButtonTheme.Secondary,
+      "bg-neutral-800 border-neutral-600": theme === ButtonTheme.Secondary,
     }
   );
 
