@@ -1,4 +1,5 @@
 import cx from "classnames";
+import Link from "next/link";
 import PropTypes from "prop-types";
 import { Icon, IconTheme } from "./icon";
 
@@ -14,10 +15,10 @@ const Button = ({ href, icon, text, theme }) => {
   );
 
   return (
-    <a href={href} className={styles}>
+    <Link href={href} className={styles}>
       <Icon id={icon} theme={IconTheme.Button} />
       {text && <span className="pl-2">{text}</span>}
-    </a>
+    </Link>
   );
 };
 

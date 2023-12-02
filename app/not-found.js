@@ -1,16 +1,14 @@
-"use client";
-
 import "./globals.css";
 import { ErrorPage, ErrorType } from "../components/errorPage";
 
-const GlobalError = () => {
+const NotFound = () => {
   return (
     <html lang="en">
       <body>
-        <ErrorPage errorType={ErrorType.Error} />
+        <ErrorPage errorType={ErrorType.NotFound} />
       </body>
     </html>
   );
 };
 
-export default GlobalError;
+export default NotFound;

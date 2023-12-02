@@ -22,8 +22,6 @@ import Footer from "../components/footer";
 // TODO: Add posts.
 // TODO: Add RSS.
 // TODO: Add analytics
-// TODO: 404 page
-// TODO: https://nextjs.org/docs/app/building-your-application/optimizing
 
 const Page = () => {
   return (

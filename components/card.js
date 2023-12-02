@@ -1,9 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 import PropTypes from "prop-types";
 
 const Card = ({ imageUrl, href, title, subtitle, label, isLast }) => {
   return (
-    <a
+    <Link
       className="flex gap-x-4 px-4 -mx-4 pt-4 rounded-xl border-none hover:bg-neutral-900 group"
       href={href}
     >
@@ -31,7 +32,7 @@ const Card = ({ imageUrl, href, title, subtitle, label, isLast }) => {
           {label && <div className="text-neutral-500 text-sm">{label}</div>}
         </div>
       </div>
-    </a>
+    </Link>
   );
 };
 
