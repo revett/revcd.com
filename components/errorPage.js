@@ -48,7 +48,7 @@ const ErrorType = Object.freeze({
 });
 
 ErrorPage.propTypes = {
-  errorType: PropTypes.oneOf([ErrorType.Error, ErrorType.NotFound]).isRequired,
+  errorType: PropTypes.oneOf(Object.values(ErrorType)).isRequired,
 };
 
 export { ErrorPage, ErrorType };

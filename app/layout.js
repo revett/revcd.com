@@ -1,8 +1,8 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Charlie Revett",
-  description: "TODO",
+  title: "Charlie Revett (@revcd) • Software Engineer",
+  description: "Software engineer based in London.",
 };
 
 const RootLayout = ({ children }) => {

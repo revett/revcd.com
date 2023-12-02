@@ -42,7 +42,7 @@ Button.propTypes = {
   href: PropTypes.string.isRequired,
   icon: PropTypes.element.isRequired,
   text: PropTypes.string,
-  theme: PropTypes.oneOf([ButtonTheme.Primary, ButtonTheme.Secondary]),
+  theme: PropTypes.oneOf(Object.values(ButtonTheme)),
 };
 
 Button.defaultProps = {

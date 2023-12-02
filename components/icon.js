@@ -23,7 +23,7 @@ const IconTheme = Object.freeze({
 
 Icon.propTypes = {
   id: PropTypes.element.isRequired,
-  theme: PropTypes.oneOf([IconTheme.Button, IconTheme.PageTitle]).isRequired,
+  theme: PropTypes.oneOf(Object.values(IconTheme)).isRequired,
 };
 
 export { Icon, IconTheme };
