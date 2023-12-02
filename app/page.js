@@ -35,7 +35,7 @@ const Page = () => {
         </Heading>
         <Paragraph>
           At <Link href="https://incident.io" text="incident.io" />, my days are
-          filled with customer conversations and crafting product features that
+          filled with customer conversations and building product features that
           streamline incident management for our users.
         </Paragraph>
         <Paragraph>
@@ -46,10 +46,9 @@ const Page = () => {
           software engineer.
         </Paragraph>
         <Paragraph>
-          I enjoy on creating products that not only solve problems but also
-          spark joy. When I'm not working, you'll find me exploring the great
-          outdoors or building apps at{" "}
-          <Link href="https://8thpark.com" text="8thpark" />.
+          I enjoy creating products that not only solve problems but also spark
+          joy. When not working, you'll find me exploring the great outdoors or
+          building apps at <Link href="https://8thpark.com" text="8thpark" />.
         </Paragraph>
         <Paragraph>
           Say{" "}
