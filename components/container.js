@@ -14,7 +14,7 @@ const Container = ({ children }) => {
   return (
     <main className={styles}>
       <div className="mx-auto w-full md:max-w-[640px]">
-        <div className="mx-8 my-12 md:m-20">{children}</div>
+        <div className="mx-8 my-12 md:mx-20 md:my-32">{children}</div>
       </div>
     </main>
   );
