@@ -11,15 +11,29 @@ import {
 import { GiMountaintop } from "react-icons/gi";
 import { TbNotebook } from "react-icons/tb";
 
+// TODO: Implement a colour palette.
+// TODO: Tooltips.
+// TODO: Add email.
+// TODO: Update icon.
+// TODO: Add posts.
+// TODO: Add RSS.
+// TODO: Add copyright.
+// TODO: Update README.
+// TODO: Add analytics
+// TODO: 404 page
+// TODO: https://nextjs.org/docs/app/building-your-application/optimizing
+
 const Page = () => {
   return (
-    <main className="text-lg">
+    <main>
       {/* Introduction & Links */}
       <section className="flex gap-x-4">
         <div className="flex flex-col">
           {/* Introduction */}
-          <GiMountaintop className="w-9 h-9 mb-8 mt-10" />
+          <GiMountaintop className="w-9 h-9 mb-6 mt-10" />
 
+          {/* TODO: Change to component */}
+          {/* TODO: Check spacing */}
           <h1 className="mt-2">
             <span className="font-semibold">Charlie Revett</span> is a software
             engineer, living in London.
@@ -48,12 +62,12 @@ const Page = () => {
           </Paragraph>
 
           {/* Links */}
-          {/* TODO - Twitter button */}
-          <div className="flex -ml-2 mt-6 items-center">
+          <div className="flex -ml-2 mt-6 items-center gap-2">
             <Button
               href="https://twitter.com/revcd"
               text="Follow @revcd"
               icon={<RiTwitterXLine />}
+              theme={ButtonTheme.Secondary}
             />
             <Button href="https://github.com/revett" icon={<RiGithubLine />} />
             <Button
@@ -73,25 +87,25 @@ const Page = () => {
       </section>
 
       {/* Work */}
-      <section>
-        <h3 className="mt-10 text-neutral-200 mb-2 font-semibold">Work</h3>
+      <section className="mt-6">
+        <h3 className="text-neutral-200 mb-2 font-semibold">Work</h3>
 
         <Card
-          imageUrl="/incident-icon.png"
+          imageUrl="/work-incident-icon.png"
           href="https://incident.io"
           title="incident.io"
           subtitle="Senior Product Engineer"
           label="2022 - Now"
         />
         <Card
-          imageUrl="/vidsy-icon.jpg"
+          imageUrl="/work-vidsy-icon.jpg"
           href="https://vidsy.co"
           title="Vidsy"
           subtitle="Chief Technology Officer"
           label="2016 - 2022"
         />
         <Card
-          imageUrl="/bbc-news-icon.png"
+          imageUrl="/work-bbc-news-icon.png"
           href="https://bbc.co.uk/news"
           title="BBC News"
           subtitle="Senior Software Engineer"
@@ -101,14 +115,52 @@ const Page = () => {
       </section>
 
       {/* Projects */}
-      <section>
-        <h3 className="mt-10 text-neutral-200 mb-2 font-semibold">Projects</h3>
+      <section className="mt-6">
+        <h3 className="text-neutral-200 mb-2 font-semibold">Projects</h3>
 
         <Card
-          imageUrl="/rss-explore-icon.png"
+          imageUrl="/project-rss-explore-icon.png"
           href="https://github.com/revett/rss-explore"
           title="RSS Explore"
-          subtitle="Tools to help you easily find and manage RSS feeds"
+          subtitle="Tools to help you easily find and manage RSS feeds."
+          isLast={true}
+        />
+      </section>
+
+      {/* Posts */}
+      <section className="mt-6">
+        <h3 className="text-neutral-200 mb-2 font-semibold">Posts</h3>
+
+        <Card
+          imageUrl="/post-hiking-bobotov-kuk.png"
+          href="/hiking-bobotov-kuk-sedlo-zabljak-gpx"
+          title="Hiking Bobotov Kuk - Sedlo to Žabljak GPX Routes"
+          subtitle="26th August 2023"
+        />
+        <Card
+          imageUrl="/post-now-winter-spring.png"
+          href="/now/winter-spring-2023"
+          title="Now - Winter / Spring 2023"
+          subtitle="21st June 2023"
+        />
+        <Card
+          imageUrl="/post-automating-simple-personal-finance.png"
+          href="/automating-simple-personal-finance-system-with-monzo"
+          title="Automating a Simple Personal Finance System with Monzo"
+          subtitle="16th May 2023"
+        />
+        <Card
+          imageUrl="/post-applying-github-dark-theme.png"
+          href="/applying-github-dark-theme-miniflux-gpt"
+          title="Applying the GitHub Dark Theme to Miniflux with GPT"
+          subtitle="6th May 2023"
+        />
+        {/* TODO: Use internal routing */}
+        <Card
+          imageUrl="/post-now-summer-autumn.png"
+          href="/now/summer-autumn-2022"
+          title="Now - Summer / Autumn 2022"
+          subtitle="30th November 2023"
           isLast={true}
         />
       </section>

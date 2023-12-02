@@ -77,6 +77,7 @@ jspm_packages/
 
 # dotenv environment variables file
 .env
+.env.local
 
 # next.js build output
 .next
@@ -90,3 +91,9 @@ Thumbs.db
 
 # ParcelJS cache
 .parcel-cache/
+
+# Sentry Config File
+.sentryclirc
+
+# HTML files
+example.html

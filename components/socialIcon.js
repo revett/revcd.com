@@ -6,7 +6,7 @@ const SocialIcon = ({ href, icon }) => {
   return (
     <a
       href={href}
-      className="p-3 rounded-xl hover:bg-neutral-900 border-none text-neutral-200"
+      className="p-3 rounded-lg hover:bg-neutral-900 border-none text-neutral-200"
     >
       {/* {icon} */}
       <IconComponent className={"h-6 w-6 text-current"} />
