@@ -1,18 +1,52 @@
 import React from 'react';
-import ReactMarkdown from 'react-markdown';
-import fs from 'fs';
-import PropTypes from 'prop-types';
-import { getPost } from '../utils/posts';
-import Heading from '../components/heading';
 import dayjs from 'dayjs';
-import Link from 'next/link';
+import fs from 'fs';
+import NextLink from 'next/link';
+import PropTypes from 'prop-types';
+import ReactMarkdown from 'react-markdown';
+import Heading from '../components/heading';
+import Link from '../components/link';
+import Paragraph from '../components/paragraph';
+import Section from '../components/section';
+import { getPost } from '../utils/posts';
+import Footer from '../components/footer';
 
 const renderers = {
-  h1: (props) => {
-    console.log(props);
-    return <Heading level={1} {...props} />;
+  a: ({ href, children }) => {
+    return <Link href={href} text={children}></Link>;
   },
+  // TODO: blockquote: () => {},
+  h1: ({ children }) => {
+    return (
+      <Section>
+        <Heading level={1}>{children}</Heading>
+      </Section>
+    );
+  },
+  h2: ({ children }) => {
+    return (
+      <Section>
+        <Heading level={2}>{children}</Heading>
+      </Section>
+    );
+  },
+  h3: ({ children }) => {
+    return (
+      <Section>
+        <Heading level={3}>{children}</Heading>
+      </Section>
+    );
+  },
+  // TODO: img: () => {},
+  // TODO: li: () => {},
+  // TODO: ol: () => {},
+  p: ({ children }) => {
+    return <Paragraph>{children}</Paragraph>;
+  },
+  // TODO: ul: () => {},
 };
+
+// TODO: Set metadata.
 
 const Post = ({ slug, title, date, content }) => {
   // Validate date with dayjs.
@@ -25,14 +59,19 @@ const Post = ({ slug, title, date, content }) => {
 
   return (
     <>
+      {/* TODO: Add breadcrumb. */}
+      {/* TODO: Add cover. */}
+      {/* TODO: Add ToC. */}
       <Heading level={1} isForSection={false}>
         {title}
       </Heading>
       <Heading level={2} isForSection={false}>
-        By <Link href="https://twitter.com/revcd">Charlie Revett</Link> on{' '}
+        By <NextLink href="https://twitter.com/revcd">Charlie Revett</NextLink> on{' '}
         {parsedDate.format('MMMM D, YYYY')}.
       </Heading>
-      <ReactMarkdown components={renderers}>{content}</ReactMarkdown>;
+      <ReactMarkdown components={renderers}>{content}</ReactMarkdown>
+      {/* TODO: Add recent posts. */}
+      <Footer includeSocialLinks />
     </>
   );
 };

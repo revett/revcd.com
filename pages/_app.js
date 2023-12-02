@@ -1,14 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Container from '../components/container';
-import Footer from '../components/footer';
 import './globals.css';
 
 const MyApp = ({ Component, pageProps }) => {
   return (
     <Container>
       <Component {...pageProps} />
-      <Footer />
     </Container>
   );
 };

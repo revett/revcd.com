@@ -7,7 +7,7 @@ import { Icon, IconTheme } from './icon';
 const Button = ({ href, icon, text, theme }) => {
   const styles = cx(
     // Spacing.
-    'p-3 rounded-xl flex items-center',
+    'px-2 rounded-xl flex items-center h-10',
 
     // Borders.
     'border-2 hover:border-neutral-500',
@@ -23,6 +23,7 @@ const Button = ({ href, icon, text, theme }) => {
       'border-transparent hover:bg-neutral-900': theme === ButtonTheme.Primary,
       'bg-neutral-900 border-neutral-700 shadow shadow-neutral-800':
         theme === ButtonTheme.Secondary,
+      'px-3': text,
     },
   );
 

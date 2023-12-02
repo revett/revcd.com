@@ -5,7 +5,7 @@ const Icon = ({ id, theme }) => {
   const IconComponent = id.type;
 
   if (theme === IconTheme.Button) {
-    return <IconComponent className="h-6 w-6 text-current inline-block" />;
+    return <IconComponent className="h-5 w-5 text-current inline-block" />;
   }
 
   if (theme === IconTheme.PageTitle) {

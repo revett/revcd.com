@@ -6,14 +6,19 @@ import { TbNotebook } from 'react-icons/tb';
 import { Button, ButtonTheme } from '../components/button';
 import ButtonGroup from '../components/buttonGroup';
 import Card from '../components/card';
+import Footer from '../components/footer';
+import Heading from '../components/heading';
+import { Icon, IconTheme } from '../components/icon';
 import Link from '../components/link';
 import Paragraph from '../components/paragraph';
 import Section from '../components/section';
-import { Icon, IconTheme } from '../components/icon';
-import Heading from '../components/heading';
 
 // TODO: Add posts.
 // TODO: Add RSS.
+// TODO: Sitemap.
+// TODO: robots.txt.
+// TODO: Opengraph.
+// TODO: CV page.
 
 // export const metadata = {
 //   title: 'Charlie Revett (@revcd) • Software Engineer',
@@ -37,7 +42,7 @@ const Index = () => {
         </Paragraph>
         <Paragraph>
           Previously, I led the technical vision at <Link href="https://vidsy.co" text="vidsy.co" />{' '}
-          as CTO and played a key role in shaping the digital experience of{' '}
+          as CTO and helped shape the digital experience of{' '}
           <Link href="https://bbc.co.uk/news" text="bbc.com/news" /> as a senior software engineer.
         </Paragraph>
         <Paragraph>
@@ -102,9 +107,10 @@ const Index = () => {
           isLast={true}
         />
       </Section>
+
+      {/* TODO: Power these by files. */}
       <Section>
         <Heading level={2}>Posts</Heading>
-        {/* TODO: Use internal routing */}
         <Card
           imageUrl="/post-hiking-bobotov-kuk.png"
           href="/hiking-bobotov-kuk-sedlo-zabljak-gpx"
@@ -137,6 +143,7 @@ const Index = () => {
           isLast={true}
         />
       </Section>
+      <Footer />
     </>
   );
 };
