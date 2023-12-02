@@ -6,20 +6,23 @@ import { TbNotebook } from 'react-icons/tb';
 import { Button, ButtonTheme } from '../components/button';
 import ButtonGroup from '../components/buttonGroup';
 import Card from '../components/card';
-import Container from '../components/container';
 import Link from '../components/link';
 import Paragraph from '../components/paragraph';
 import Section from '../components/section';
 import { Icon, IconTheme } from '../components/icon';
 import Heading from '../components/heading';
-import Footer from '../components/footer';
 
 // TODO: Add posts.
 // TODO: Add RSS.
 
-const Page = () => {
+// export const metadata = {
+//   title: 'Charlie Revett (@revcd) • Software Engineer',
+//   description: 'Software engineer based in London.',
+// };
+
+const Index = () => {
   return (
-    <Container>
+    <>
       {/* Introduction */}
       <Section>
         <Icon id={<GiMountaintop />} theme={IconTheme.PageTitle} />
@@ -134,9 +137,8 @@ const Page = () => {
           isLast={true}
         />
       </Section>
-      <Footer />
-    </Container>
+    </>
   );
 };
 
-export default Page;
+export default Index;

@@ -4,8 +4,6 @@ import { TbFaceIdError, TbHomeMove } from 'react-icons/tb';
 
 import { Button, ButtonTheme } from '../components/button';
 import ButtonGroup from '../components/buttonGroup';
-import Container from '../components/container';
-import Footer from '../components/footer';
 import Heading from '../components/heading';
 import { Icon, IconTheme } from '../components/icon';
 import Section from '../components/section';
@@ -20,7 +18,7 @@ const ErrorPage = ({ errorType }) => {
   }
 
   return (
-    <Container>
+    <>
       <Section>
         <Icon id={<TbFaceIdError />} theme={IconTheme.PageTitle} />
 
@@ -32,9 +30,7 @@ const ErrorPage = ({ errorType }) => {
           <Button href="/" icon={<TbHomeMove />} text="Go home" theme={ButtonTheme.Secondary} />
         </ButtonGroup>
       </Section>
-
-      <Footer />
-    </Container>
+    </>
   );
 };
 

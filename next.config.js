@@ -1,9 +1,12 @@
 const { withSentryConfig } = require('@sentry/nextjs');
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {};
+// Base config.
+let nextConfig = {
+  pageExtensions: ['js', 'mdx'],
+};
 
-module.exports = withSentryConfig(
+// Sentry.
+nextConfig = withSentryConfig(
   nextConfig,
   {
     // For all available options, see:
@@ -40,3 +43,5 @@ module.exports = withSentryConfig(
     automaticVercelMonitors: true,
   },
 );
+
+module.exports = nextConfig;
