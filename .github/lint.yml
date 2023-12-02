@@ -1,0 +1,40 @@
+name: Lint
+
+on: [push, pull_request]
+
+jobs:
+  eslint:
+    name: ESLint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v2
+      - name: Use Node.js
+        run: echo "::set-output name=version::$(cat .node-version)"
+        id: node-version
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '${{ steps.node-version.outputs.version }}'
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+      - name: Run ESLint
+        run: yarn lint
+
+  prettier:
+    name: Prettier
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v2
+      - name: Use Node.js
+        run: echo "::set-output name=version::$(cat .node-version)"
+        id: node-version
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '${{ steps.node-version.outputs.version }}'
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+      - name: Run Prettier
+        run: yarn format --check
