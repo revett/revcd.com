@@ -8,7 +8,7 @@ const Card = ({ imageUrl, href, title, subtitle, label, isLast }) => {
     >
       <div className="w-9 h-9 mt-0.5 rounded-xl flex-shrink-0 shadow-shorter overflow-hidden">
         <div className="text-zinc-400 font-semibold flex justify-center items-center h-full">
-          <img className="w-9 h-9" src={imageUrl} />
+          <img className="w-9 h-9 mb-0 rounded-none" src={imageUrl} />
         </div>
       </div>
       <div
@@ -18,8 +18,8 @@ const Card = ({ imageUrl, href, title, subtitle, label, isLast }) => {
       >
         <div>{title}</div>
         <div className="text-zinc-500 flex justify-between gap-x-2 items-center">
-          <div className="text-sm">{subtitle}</div>
-          {label && <div className="text-zinc-500 text-sm">{label}</div>}
+          <div className="text-base">{subtitle}</div>
+          {label && <div className="text-zinc-500 text-base">{label}</div>}
         </div>
       </div>
     </a>

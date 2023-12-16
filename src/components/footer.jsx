@@ -21,11 +21,10 @@ const buttons = [
 ]
 
 const Footer = ({ includeSocialLinks }) => {
-  const startingYear = 2022
   const currentYear = new Date().getFullYear()
 
   return (
-    <section className="flex flex-col items-center justify-center">
+    <section className="flex flex-col items-center justify-center mt-12">
       {includeSocialLinks && (
         <ButtonGroup className="flex justify-center">
           {buttons.map((button, i) => {
@@ -33,19 +32,13 @@ const Footer = ({ includeSocialLinks }) => {
           })}
         </ButtonGroup>
       )}
-      <p className="text-center text-sm">
-        &copy; Charlie Revett ({startingYear} - {currentYear})
-      </p>
+      <p className="text-center text-base">&copy; {currentYear} Charlie Revett</p>
     </section>
   )
 }
 
 Footer.propTypes = {
   includeSocialLinks: PropTypes.bool,
-}
-
-Footer.defaultProps = {
-  includeSocialLinks: false,
 }
 
 export default Footer

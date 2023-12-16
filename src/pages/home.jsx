@@ -75,107 +75,97 @@ const projects = [
 const Home = () => {
   return (
     <Container>
-      <section>
-        <Icon id={<GiMountaintop />} theme={IconTheme.PageTitle} />
+      <Icon id={<GiMountaintop />} theme={IconTheme.PageTitle} />
 
-        <p className="text-zinc-200">
-          <span className="font-semibold">Charlie Revett</span> is a software engineer, living in
-          London.
-        </p>
+      <p className="text-zinc-200">
+        <span className="font-semibold">Charlie Revett</span> is a software engineer, living in
+        London.
+      </p>
 
-        <p>
-          I work as a product engineer at <a href="https://incident.io">incident.io</a>, where I
-          chat to customers about how they manage their incidents and build product features that
-          streamline their workflows.
-        </p>
+      <p>
+        I work as a product engineer at <a href="https://incident.io">incident.io</a>, where I chat
+        to customers about how they manage their incidents and build product features that
+        streamline their workflows.
+      </p>
 
-        <p>
-          Previously, I led the technical vision at <a href="https://vidsy.co">vidsy.co</a> as CTO
-          and helped shape the digital experience of{" "}
-          <a href="https://bbc.co.uk/news">bbc.com/news</a> as a senior software engineer.
-        </p>
+      <p>
+        Previously, I led the technical vision at <a href="https://vidsy.co">vidsy.co</a> as CTO and
+        helped shape the digital experience of <a href="https://bbc.co.uk/news">bbc.com/news</a> as
+        a senior software engineer.
+      </p>
 
-        <p>
-          I enjoy creating products that not only solve problems but also spark joy. When not
-          working, you&apos;ll find me exploring the great outdoors or building apps at{" "}
-          <a href="https://8thpark.com">8thpark.com</a>.
-        </p>
+      <p>
+        I enjoy creating products that not only solve problems but also spark joy. When not working,
+        you&apos;ll find me exploring the great outdoors or building apps at{" "}
+        <a href="https://8thpark.com">8thpark.com</a>.
+      </p>
 
-        <p>
-          Say <a href="mailto:hi@revdex.fastmail.com">hi@revdex.fastmail.com</a>, or read about what
-          I&apos;m <Link to="/now">up to now</Link>.
-        </p>
-      </section>
+      <p>
+        Say <a href="mailto:hi@revdex.fastmail.com">hi@revdex.fastmail.com</a>, or read about what
+        I&apos;m <Link to="/now">up to now</Link>.
+      </p>
 
-      <section>
-        <ButtonGroup>
-          {buttons.map((button, index) => {
-            return (
-              <Button
-                key={index}
-                href={button.href}
-                text={button.text}
-                icon={button.icon}
-                theme={button.theme}
-              />
-            )
-          })}
-        </ButtonGroup>
-      </section>
-
-      <section>
-        <h2>Work</h2>
-
-        {work.map((job, index) => {
+      <ButtonGroup>
+        {buttons.map((button, index) => {
           return (
-            <Card
+            <Button
               key={index}
-              imageUrl={job.imageUrl}
-              href={job.href}
-              title={job.title}
-              subtitle={job.subtitle}
-              label={job.label}
-              isLast={index === work.length - 1}
+              href={button.href}
+              text={button.text}
+              icon={button.icon}
+              theme={button.theme}
             />
           )
         })}
-      </section>
+      </ButtonGroup>
 
-      <section>
-        <h2>Projects</h2>
+      <h2>Work</h2>
 
-        {projects.map((project, i) => {
-          return (
-            <Card
-              key={i}
-              imageUrl={project.imageUrl}
-              href={project.href}
-              title={project.title}
-              subtitle={project.subtitle}
-              isLast={i === projects.length - 1}
-            />
-          )
-        })}
-      </section>
+      {work.map((job, index) => {
+        return (
+          <Card
+            key={index}
+            imageUrl={job.imageUrl}
+            href={job.href}
+            title={job.title}
+            subtitle={job.subtitle}
+            label={job.label}
+            isLast={index === work.length - 1}
+          />
+        )
+      })}
 
-      <section>
-        <h2>Posts</h2>
+      <h2>Projects</h2>
 
-        {posts.map((post, i) => {
-          return (
-            <Card
-              key={i}
-              imageUrl={post.imageUrl}
-              href={post.path}
-              title={post.title}
-              subtitle={post.date}
-              isLast={i === posts.length - 1}
-            />
-          )
-        })}
-      </section>
+      {projects.map((project, i) => {
+        return (
+          <Card
+            key={i}
+            imageUrl={project.imageUrl}
+            href={project.href}
+            title={project.title}
+            subtitle={project.subtitle}
+            isLast={i === projects.length - 1}
+          />
+        )
+      })}
 
-      <Footer />
+      <h2>Posts</h2>
+
+      {posts.map((post, i) => {
+        return (
+          <Card
+            key={i}
+            imageUrl={post.imageUrl}
+            href={post.path}
+            title={post.title}
+            subtitle={post.date}
+            isLast={i === posts.length - 1}
+          />
+        )
+      })}
+
+      <Footer includeSocialLinks={false} />
     </Container>
   )
 }

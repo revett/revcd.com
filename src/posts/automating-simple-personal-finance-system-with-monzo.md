@@ -1,11 +1,7 @@
 <!-- TODO: ToC -->
 <!-- TODO: Back -->
-<!-- TODO: Cover image -->
+<!-- TODO: Recent posts -->
 <!-- TODO: Anchors for headings -->
-
-## Automating a Simple Personal Finance System with Monzo (2023)
-
-> By **@Charlie Revett** on May 16, 2023.
 
 Two friends from work were interested in understanding how you can use Monzo for an automated
 personal finance setup. I think a practical example would be useful for others, so I am sharing it
@@ -41,7 +37,7 @@ The system should provide:
 
 ## Structure
 
-![Untitled-2023-03-03-1511.png](Automating%20a%20Simple%20Personal%20Finance%20System%20with%20M%20deb5f60018ef4e33a5e1eca9b643223a/Untitled-2023-03-03-1511.png)
+![Account structure diagram](/posts/automating-simple-personal-structure.png)
 
 ### 1. Monzo Plus (Daily Spending)
 
@@ -152,9 +148,3 @@ Read →
 
 - 🐈 created by **@viglomir** on the
   [Midjourney Discord](https://discord.com/channels/662267976984297473/1038329663187062804/1103685661317398621)
-
----
-
-## Recent Posts
-
-[](Automating%20a%20Simple%20Personal%20Finance%20System%20with%20M%20deb5f60018ef4e33a5e1eca9b643223a/Untitled%20f89db98915194d9bb5690a8c8281e439.csv)

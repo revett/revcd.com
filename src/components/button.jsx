@@ -45,6 +45,7 @@ Button.propTypes = {
   theme: PropTypes.oneOf(Object.values(ButtonTheme)),
 }
 
+// TODO: We don't like default props.
 Button.defaultProps = {
   theme: ButtonTheme.Primary,
 }

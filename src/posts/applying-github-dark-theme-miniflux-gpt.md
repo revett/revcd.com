@@ -1,21 +1,8 @@
-# Applying the GitHub Dark Theme to Miniflux with GPT
-
-Cover: Applying%20the%20GitHub%20Dark%20Theme%20to%20Miniflux%20with%20GP%200c61e65b8a8b43c6bbf4e9f0f598ce6a/night-mid(1)%201.png
-Published: May 6, 2023
-
-← [Back](https://www.notion.so/About-189cd2de736546bb80b0f792704f211b?pvs=21)
-
-![night-mid(1).png](<Applying%20the%20GitHub%20Dark%20Theme%20to%20Miniflux%20with%20GP%200c61e65b8a8b43c6bbf4e9f0f598ce6a/night-mid(1).png>)
-
-## Applying the GitHub Dark Theme to Miniflux with GPT
-
-> _By **@Charlie Revett** on May 6, 2023_
-
 I use the [GitHub dark theme](https://github.com/vv9k/vim-github-dark) for both my
 [VS Code](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme) and
 terminal setup, and wanted to experiment with applying the theme to my self-hosted
-[Miniflux](https://github.com/miniflux/v2) app as I find the default colour scheme quite dull and
-poor for readability; plus consistency is key of course.
+[Miniflux](https://github.com/miniflux/v2) app, as I find the default colour scheme quite dull and
+poor for readability; plus consistency is key, of course.
 
 [Miniflux](https://github.com/miniflux/v2) offers a primitive CSS override via the settings page, so
 the goals for this experiment were:
@@ -34,11 +21,11 @@ the goals for this experiment were:
 
 ### Before
 
-![Untitled](Applying%20the%20GitHub%20Dark%20Theme%20to%20Miniflux%20with%20GP%200c61e65b8a8b43c6bbf4e9f0f598ce6a/Untitled.png)
+![Screenshot of Miniflux before](/posts/applying-github-dark-before.png)
 
 ### After
 
-![Untitled](Applying%20the%20GitHub%20Dark%20Theme%20to%20Miniflux%20with%20GP%200c61e65b8a8b43c6bbf4e9f0f598ce6a/Untitled%201.png)
+![Screenshot of Miniflux after](/posts/applying-github-dark-after.png)
 
 ## Generating
 
@@ -61,7 +48,7 @@ blue:       #77bdfb
 purple:     #cea5fb
 ```
 
-![Untitled](Applying%20the%20GitHub%20Dark%20Theme%20to%20Miniflux%20with%20GP%200c61e65b8a8b43c6bbf4e9f0f598ce6a/Untitled%202.png)
+![Colours in the GitHub dark theme](/posts/applying-github-dark-theme.png)
 
 The [Miniflux](https://github.com/miniflux/v2) theme CSS custom properties can be found within the
 `:root` block of `system.css`. I removed any lines which were not related to colour (to reduce
@@ -142,7 +129,7 @@ recommend giving this method a try.
 
 ## Reference
 
-- Amended raw CSS with `#blank`
+Amended raw CSS with `#blank`
 
 ```css
 :root {
@@ -230,7 +217,7 @@ recommend giving this method a try.
 }
 ```
 
-- Final CSS for [Miniflux](https://github.com/miniflux/v2)
+Final CSS for [Miniflux](https://github.com/miniflux/v2)
 
 ```css
 .entry-content {
@@ -329,9 +316,3 @@ recommend giving this method a try.
   --counter-color: #ecf2f8;
 }
 ```
-
----
-
-## Recent Posts
-
-[](Applying%20the%20GitHub%20Dark%20Theme%20to%20Miniflux%20with%20GP%200c61e65b8a8b43c6bbf4e9f0f598ce6a/Untitled%20e64204520cd44519b8a0d8573fe8e9b4.csv)

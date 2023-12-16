@@ -1,16 +1,3 @@
-# Hiking Bobotov Kuk - Sedlo to Žabljak GPX Routes
-
-Cover: Hiking%20Bobotov%20Kuk%20-%20Sedlo%20to%20Z%CC%8Cabljak%20GPX%20Routes%20c4af3cee6f09497ab3cf31ecdaf429ba/fabien-rousselot-qb5KQ3UZzxk-unsplash%201.jpg
-Published: August 26, 2023
-
-← [Back](https://www.notion.so/About-189cd2de736546bb80b0f792704f211b?pvs=21)
-
-![fabien-rousselot-qb5KQ3UZzxk-unsplash.jpg](Hiking%20Bobotov%20Kuk%20-%20Sedlo%20to%20Z%CC%8Cabljak%20GPX%20Routes%20c4af3cee6f09497ab3cf31ecdaf429ba/fabien-rousselot-qb5KQ3UZzxk-unsplash.jpg)
-
-# Hiking Bobotov Kuk - Sedlo to Žabljak GPX Routes
-
-> _By **@Charlie Revett** on August 26, 2023_
-
 Eight friends and I rented a Renault Trafic from Dubrovnik this summer, and travelled along the
 Croatian coast, up through Bosnia, and then back down through Montenegro. One of the highlights was
 a day hike in Montenegro’s [Durmitor National Park](https://en.wikipedia.org/wiki/Durmitor); where
@@ -28,37 +15,23 @@ Hope these help, and enjoy! This ended up being one of my favourite day hikes I�
 
 ### Sedlo to Summit
 
-**Download**
+GPX: [Bobotov Kuk - Sedlo to Summit.gpx](/posts/bobotov-kuk-sedlo-to-summit.gpx)
 
-[Bobotov Kuk - Sedlo to Summit.gpx](Hiking%20Bobotov%20Kuk%20-%20Sedlo%20to%20Z%CC%8Cabljak%20GPX%20Routes%20c4af3cee6f09497ab3cf31ecdaf429ba/Bobotov_Kuk_-_Sedlo_to_Summit.gpx)
+![Screenshot of map](/posts/hiking-bobotov-kuk-sedlo-map.png)
 
-**Map**
-
-![Screenshot 2023-08-26 at 17-04-25 gpx.studio — the online GPX file editor(1).png](<Hiking%20Bobotov%20Kuk%20-%20Sedlo%20to%20Z%CC%8Cabljak%20GPX%20Routes%20c4af3cee6f09497ab3cf31ecdaf429ba/Screenshot_2023-08-26_at_17-04-25_gpx.studio__the_online_GPX_file_editor(1).png>)
+<!-- Add screenshot -->
 
 ### Žabljak to Summit
 
-**Download**
+GPX: [Bobotov Kuk - Žabljak to Summit.gpx](/posts/bobotov-kuk-zabljak-to-summit.gpx)
 
-[Bobotov Kuk - Žabljak to Summit.gpx](Hiking%20Bobotov%20Kuk%20-%20Sedlo%20to%20Z%CC%8Cabljak%20GPX%20Routes%20c4af3cee6f09497ab3cf31ecdaf429ba/Bobotov_Kuk_-_Zabljak_to_Summit.gpx)
-
-**Map**
-
-![Screenshot 2023-08-26 at 17-06-17 gpx.studio — the online GPX file editor.png](Hiking%20Bobotov%20Kuk%20-%20Sedlo%20to%20Z%CC%8Cabljak%20GPX%20Routes%20c4af3cee6f09497ab3cf31ecdaf429ba/Screenshot_2023-08-26_at_17-06-17_gpx.studio__the_online_GPX_file_editor.png)
+![Screenshot of map](/posts/hiking-bobotov-kuk-zabljak-map.png)
 
 ## Credits
 
-- Cover [photo](https://unsplash.com/photos/qb5KQ3UZzxk) by
-  [Fabien Rousselot](https://unsplash.com/@where_is_fab)
-- Thank you to [Freya](https://www.instagram.com/thesandyfeet/) for this
-  [post](https://thesandyfeet.com/our-guide-to-climbing-bobotov-kuk/) on the different routes up
-  Bobotov Kuk
-- Thanks to [Andrea](https://www.instagram.com/wanderful_journeys/) for this
+- Cover photo by [Fabien Rousselot](https://unsplash.com/@where_is_fab)
+- Thank you to Freya for this [post](https://thesandyfeet.com/our-guide-to-climbing-bobotov-kuk/) on
+  the different routes up Bobotov Kuk
+- Thanks to Andrea for this
   [post](https://www.wanderfuljourneystravel.com/the-wanderful-blog/bobotov-kuk-montenegro), which
   got us all hyped for the route
-
----
-
-## Recent Posts
-
-[](Hiking%20Bobotov%20Kuk%20-%20Sedlo%20to%20Z%CC%8Cabljak%20GPX%20Routes%20c4af3cee6f09497ab3cf31ecdaf429ba/Untitled%20f21844f36a594237afbd9703c2d6f577.csv)

@@ -17,8 +17,16 @@ const App = () => {
           <Route path="/cv" element={<CV />} />
           <Route path="/now" element={<Now />} />
 
-          {posts.map(({ path, content }) => {
-            return <Route key={path} path={path} element={<Markdown markdown={content} />} />
+          {posts.map(({ path, content, title, date }) => {
+            const id = path.split("/").pop()
+
+            return (
+              <Route
+                key={path}
+                path={path}
+                element={<Markdown id={id} markdown={content} title={title} date={date} />}
+              />
+            )
           })}
 
           <Route path="*" element={<NotFound />} />

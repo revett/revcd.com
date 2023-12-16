@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Nunito", "sans-serif"],
+        mono: ["Source Code Pro", "monospace"],
+        sans: ["Afacad", "sans-serif"],
       },
     },
   },
