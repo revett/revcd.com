@@ -26,7 +26,7 @@ const Markdown = ({ id, markdown, title, date }) => {
   return (
     <Container>
       <p>
-        <Link to="/">Home</Link> {"/"} Posts {"/"} {title}
+        <Link to="/">home</Link> / posts / {title}
       </p>
       <img src={`/posts/${id}.jpg`} />
       <h1>{title}</h1>
