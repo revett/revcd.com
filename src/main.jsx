@@ -4,6 +4,7 @@ import React from "react"
 import ReactDOM from "react-dom/client"
 import App from "./app"
 import "./index.css"
+import "typeface-nunito"
 
 if (process.env.NODE_ENV === "production") {
   Sentry.init({

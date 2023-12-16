@@ -14,7 +14,7 @@ module.exports = {
   ignorePatterns: ["dist", ".eslintrc.cjs"],
   parserOptions: { ecmaVersion: "latest", sourceType: "module" },
   settings: { react: { version: "18.2" } },
-  plugins: ["import", "prettier", "react-refresh"],
+  plugins: ["import", "prettier", "react-refresh", "tailwindcss"],
   globals: {
     process: "readonly", // Allow using process.env.
   },
