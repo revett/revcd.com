@@ -13,7 +13,7 @@ const Card = ({ imageUrl, href, title, subtitle, label, isLast }) => {
       </div>
       <div
         className={`flex flex-col flex-auto pb-4 group-hover:border-transparent text-zinc-300 ${
-          isLast ? "" : "border-b border-zinc-900"
+          isLast ? "" : "border-b border-zinc-800"
         }`}
       >
         <div>{title}</div>

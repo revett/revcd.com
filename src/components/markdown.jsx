@@ -3,6 +3,7 @@ import React from "react"
 import remarkHtml from "remark-html"
 import remarkParse from "remark-parse"
 import { unified } from "unified"
+import Container from "./container"
 
 const Markdown = ({ markdown }) => {
   const [content, setContent] = React.useState("")
@@ -20,7 +21,11 @@ const Markdown = ({ markdown }) => {
       })
   }, [markdown])
 
-  return <div dangerouslySetInnerHTML={{ __html: content }} />
+  return (
+    <Container>
+      <div dangerouslySetInnerHTML={{ __html: content }} />
+    </Container>
+  )
 }
 
 Markdown.propTypes = {

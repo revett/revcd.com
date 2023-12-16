@@ -9,7 +9,7 @@ const Icon = ({ id, theme }) => {
 
   if (theme === IconTheme.PageTitle) {
     return (
-      <div className="mb-4">
+      <div className="mb-8">
         <IconComponent className="w-12 h-12 text-zinc-200" />
       </div>
     )

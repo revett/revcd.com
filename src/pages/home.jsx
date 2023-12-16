@@ -12,6 +12,7 @@ import Card from "../components/card"
 import Container from "../components/container"
 import Footer from "../components/footer"
 import { Icon, IconTheme } from "../components/icon"
+import posts from "../posts"
 
 const buttons = [
   {
@@ -152,6 +153,23 @@ const Home = () => {
               title={project.title}
               subtitle={project.subtitle}
               isLast={i === projects.length - 1}
+            />
+          )
+        })}
+      </section>
+
+      <section>
+        <h2>Posts</h2>
+
+        {posts.map((post, i) => {
+          return (
+            <Card
+              key={i}
+              imageUrl={post.imageUrl}
+              href={post.path}
+              title={post.title}
+              subtitle={post.date}
+              isLast={i === posts.length - 1}
             />
           )
         })}
