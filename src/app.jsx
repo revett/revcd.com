@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom"
 import Markdown from "./components/markdown"
 import CV from "./pages/cv"
 import Home from "./pages/home"
+import NotFound from "./pages/notFound"
 import Now from "./pages/now"
 import postGitHubTheme from "./posts/applying-github-dark-theme-miniflux-gpt.md"
 import postMonzo from "./posts/automating-simple-personal-finance-system-with-monzo.md"
@@ -44,6 +45,8 @@ const App = () => {
           {posts.map(({ path, content }) => {
             return <Route key={path} path={path} element={<Markdown markdown={content} />} />
           })}
+
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </ErrorBoundary>
     </Router>
