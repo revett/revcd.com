@@ -1,29 +1,30 @@
-> ⚠️ Project is **archived** (May 2023).
->
-> I have switched to using [Super](https://super.so) in combination with 
-> [Notion](https://www.notion.so) to remove maintenance overhead and make
-> it easier to write/publish blog posts.
-
 # revcd.com
 
-Codebase for my personal website.
-
-## Development
-
-### Development Server
-
-Start a local Node container (see [`container-node`](https://github.com/revett/dotfiles/blob/main/.aliases)), then:
-
-```
-yarn start
-```
+Personal website.
 
 ## Stack
 
-- [postcss](https://github.com/postcss/postcss) - CSS pre-processing
-- [react](https://github.com/facebook/react) - UI
-- [rollup](https://github.com/rollup/rollup) - Support for
-  [MDX](https://github.com/mdx-js/mdx)
-- [tailwindcss](https://github.com/tailwindlabs/tailwindcss) - CSS framework
-- [vercel](https://github.com/vercel/vercel) - Deployment and hosting
-- [vite](https://github.com/vitejs/vite) - Bundler
+- React
+- Next.js
+- Tailwind
+- Vercel
+
+## Local
+
+```
+kontainer-node
+```
+
+```
+yarn
+```
+
+```
+yarn dev
+```
+
+## Credits
+
+- Thanks to [@gavmn](https://twitter.com/gavmn),
+  [@emilkowalski\_](https://twitter.com/emilkowalski_), and [@almonk](https://twitter.com/almonk)
+  for design inspiration
