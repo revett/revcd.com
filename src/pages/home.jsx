@@ -3,10 +3,14 @@ import { RiGithubLine, RiInstagramLine, RiLinkedinFill, RiTwitterXLine } from "r
 import { TbNotebook } from "react-icons/tb"
 import { Link } from "react-router-dom"
 import imgRSSExplore from "../assets/projects/rss-explore-icon.png"
+import imgBBC from "../assets/work/bbc-news-icon.png"
+import imgIncident from "../assets/work/incident-icon.png"
+import imgVidsy from "../assets/work/vidsy-icon.png"
 import { Button, ButtonTheme } from "../components/button"
 import ButtonGroup from "../components/buttonGroup"
 import Card from "../components/card"
 import Container from "../components/container"
+import Footer from "../components/footer"
 import { Icon, IconTheme } from "../components/icon"
 
 const buttons = [
@@ -34,6 +38,30 @@ const buttons = [
   },
 ]
 
+const work = [
+  {
+    imageUrl: imgIncident,
+    href: "https://incident.io",
+    title: "incident.io",
+    subtitle: "Senior Product Engineer",
+    label: "2022 - Now",
+  },
+  {
+    imageUrl: imgVidsy,
+    href: "https://vidsy.co",
+    title: "Vidsy",
+    subtitle: "Chief Technology Officer",
+    label: "2016 - 2022",
+  },
+  {
+    imageUrl: imgBBC,
+    href: "https://bbc.co.uk/news",
+    title: "BBC News",
+    subtitle: "Senior Software Engineer",
+    label: "2014 - 2016",
+  },
+]
+
 const projects = [
   {
     imageUrl: imgRSSExplore,
@@ -49,10 +77,10 @@ const Home = () => {
       <section>
         <Icon id={<GiMountaintop />} theme={IconTheme.PageTitle} />
 
-        <h1>
+        <p className="text-zinc-200">
           <span className="font-semibold">Charlie Revett</span> is a software engineer, living in
           London.
-        </h1>
+        </p>
 
         <p>
           I work as a product engineer at <a href="https://incident.io">incident.io</a>, where I
@@ -95,6 +123,24 @@ const Home = () => {
       </section>
 
       <section>
+        <h2>Work</h2>
+
+        {work.map((job, index) => {
+          return (
+            <Card
+              key={index}
+              imageUrl={job.imageUrl}
+              href={job.href}
+              title={job.title}
+              subtitle={job.subtitle}
+              label={job.label}
+              isLast={index === work.length - 1}
+            />
+          )
+        })}
+      </section>
+
+      <section>
         <h2>Projects</h2>
 
         {projects.map((project, i) => {
@@ -110,6 +156,8 @@ const Home = () => {
           )
         })}
       </section>
+
+      <Footer />
     </Container>
   )
 }
