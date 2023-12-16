@@ -2,10 +2,46 @@ import { GiMountaintop } from "react-icons/gi"
 import { RiGithubLine, RiInstagramLine, RiLinkedinFill, RiTwitterXLine } from "react-icons/ri"
 import { TbNotebook } from "react-icons/tb"
 import { Link } from "react-router-dom"
+import imgRSSExplore from "../assets/projects/rss-explore-icon.png"
 import { Button, ButtonTheme } from "../components/button"
 import ButtonGroup from "../components/buttonGroup"
+import Card from "../components/card"
 import Container from "../components/container"
 import { Icon, IconTheme } from "../components/icon"
+
+const buttons = [
+  {
+    href: "https://twitter.com/revcd",
+    text: "Follow @revcd",
+    icon: <RiTwitterXLine />,
+    theme: ButtonTheme.Secondary,
+  },
+  {
+    href: "https://github.com/revett",
+    icon: <RiGithubLine />,
+  },
+  {
+    href: "https://instagram.com/cdrev",
+    icon: <RiInstagramLine />,
+  },
+  {
+    href: "https://linkedin.com/in/cdrev",
+    icon: <RiLinkedinFill />,
+  },
+  {
+    href: "https://www.ukclimbing.com/logbook/showlog.php?id=216572&sort=g&country=&crag=&gradetype=&partners=0&year=&season=&nresults=100&pg=1",
+    icon: <TbNotebook />,
+  },
+]
+
+const projects = [
+  {
+    imageUrl: imgRSSExplore,
+    href: "https://github.com/revett/rss-explore",
+    title: "RSS Explore",
+    subtitle: "Tools to help you easily find and manage RSS feeds.",
+  },
+]
 
 const Home = () => {
   return (
@@ -44,20 +80,35 @@ const Home = () => {
 
       <section>
         <ButtonGroup>
-          <Button
-            href="https://twitter.com/revcd"
-            text="Follow @revcd"
-            icon={<RiTwitterXLine />}
-            theme={ButtonTheme.Secondary}
-          />
-          <Button href="https://github.com/revett" icon={<RiGithubLine />} />
-          <Button href="https://instagram.com/cdrev" icon={<RiInstagramLine />} />
-          <Button href="https://linkedin.com/in/cdrev" icon={<RiLinkedinFill />} />
-          <Button
-            href="https://www.ukclimbing.com/logbook/showlog.php?id=216572&sort=g&country=&crag=&gradetype=&partners=0&year=&season=&nresults=100&pg=1"
-            icon={<TbNotebook />}
-          />
+          {buttons.map((button, index) => {
+            return (
+              <Button
+                key={index}
+                href={button.href}
+                text={button.text}
+                icon={button.icon}
+                theme={button.theme}
+              />
+            )
+          })}
         </ButtonGroup>
+      </section>
+
+      <section>
+        <h2>Projects</h2>
+
+        {projects.map((project, i) => {
+          return (
+            <Card
+              key={i}
+              imageUrl={project.imageUrl}
+              href={project.href}
+              title={project.title}
+              subtitle={project.subtitle}
+              isLast={i === projects.length - 1}
+            />
+          )
+        })}
       </section>
     </Container>
   )
