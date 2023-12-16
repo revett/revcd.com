@@ -25,4 +25,6 @@ yarn dev
 
 ## Credits
 
-- [@almonk](https://twitter.com/almonk) for design inspiration
+- Thanks to [@gavmn](https://twitter.com/gavmn),
+  [@emilkowalski\_](https://twitter.com/emilkowalski_), and [@almonk](https://twitter.com/almonk)
+  for design inspiration
