@@ -2,6 +2,7 @@ import { GiMountaintop } from "react-icons/gi"
 import { RiGithubLine, RiInstagramLine, RiLinkedinFill, RiTwitterXLine } from "react-icons/ri"
 import { TbNotebook } from "react-icons/tb"
 import { Link } from "react-router-dom"
+import imgMe from "../assets/me.jpg"
 import imgRSSExplore from "../assets/projects/rss-explore-icon.png"
 import imgBBC from "../assets/work/bbc-news-icon.png"
 import imgIncident from "../assets/work/incident-icon.png"
@@ -72,37 +73,36 @@ const projects = [
   },
 ]
 
+// TODO: Add Colophon.
+
 const Home = () => {
   return (
     <Container>
-      <Icon id={<GiMountaintop />} theme={IconTheme.PageTitle} />
-
-      <p className="text-zinc-200">
-        <span className="font-semibold">Charlie Revett</span> is a software engineer, living in
-        London.
+      <img src={imgMe} className="w-9 h-9 rounded-full mb-4" />
+      <p>
+        <span className="font-medium">charlie revett</span> / <Link to="/">home</Link>
       </p>
 
       <p>
-        I work as a product engineer at <a href="https://incident.io">incident.io</a>, where I chat
-        to customers about how they manage their incidents and build product features that
-        streamline their workflows.
+        I&apos;m Charlie, currently working as a senior product engineer at{" "}
+        <a href="https://incident.io">incident.io</a> in London. I love everything related to
+        building great products at pace, and am always looking to learn new things.
       </p>
 
       <p>
-        Previously, I led the technical vision at <a href="https://vidsy.co">vidsy.co</a> as CTO and
-        helped shape the digital experience of <a href="https://bbc.co.uk/news">bbc.com/news</a> as
-        a senior software engineer.
+        Previously, I led the technical vision at <a href="https://vidsy.co">vidsy.co</a> as CTO,
+        and helped shape the digital experience of <a href="https://bbc.co.uk/news">bbc.com/news</a>{" "}
+        as a senior software engineer.
       </p>
 
       <p>
-        I enjoy creating products that not only solve problems but also spark joy. When not working,
-        you&apos;ll find me exploring the great outdoors or building apps at{" "}
-        <a href="https://8thpark.com">8thpark.com</a>.
+        When not working, you&apos;ll likely find me climbing or up a mountain. In my spare time, I
+        make web apps as part of <a href="https://8thpark.com">8thpark</a>.
       </p>
 
       <p>
-        Say <a href="mailto:hi@revdex.fastmail.com">hi@revdex.fastmail.com</a>, or read about what
-        I&apos;m <Link to="/now">up to now</Link>.
+        Say <a href="mailto:hi@revdex.fastmail.com">hi@revdex.fastmail.com</a>, read my{" "}
+        <Link to="/cv">CV</Link> or see what I&apos;m <Link to="/now">up to now</Link>.
       </p>
 
       <ButtonGroup>

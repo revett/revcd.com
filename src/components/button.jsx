@@ -8,19 +8,18 @@ const Button = ({ href, icon, text, theme }) => {
     "px-2 rounded-xl flex items-center h-10",
 
     // Borders.
-    "border-2 hover:border-neutral-500",
+    "border-2 hover:border-zinc-500",
 
     // Animations.
     "transition-colors duration-200 ease-in-out",
 
     // Shadows.
-    "hover:shadow hover:shadow-neutral-800",
+    "hover:shadow hover:shadow-zinc-800",
 
     // Themes.
     {
-      "border-transparent hover:bg-neutral-900": theme === ButtonTheme.Primary,
-      "bg-neutral-900 border-neutral-700 shadow shadow-neutral-800":
-        theme === ButtonTheme.Secondary,
+      "border-transparent hover:bg-zinc-900": theme === ButtonTheme.Primary,
+      "bg-zinc-900 border-zinc-700 shadow shadow-zinc-800": theme === ButtonTheme.Secondary,
       "px-3": text,
     },
   )

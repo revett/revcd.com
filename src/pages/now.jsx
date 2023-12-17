@@ -5,7 +5,7 @@ const Now = () => {
   return (
     <Container>
       <p>
-        <Link to="/">home</Link> / now
+        <Link to="/">charlie revett</Link> / now
       </p>
       <div>Now</div>
     </Container>

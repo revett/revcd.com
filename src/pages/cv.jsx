@@ -5,7 +5,7 @@ const CV = () => {
   return (
     <Container>
       <p>
-        <Link to="/">home</Link> / cv
+        <Link to="/">charlie revett</Link> / cv
       </p>
 
       <h1>CV / Resume</h1>
