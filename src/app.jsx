@@ -1,34 +1,39 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-import "./index.css";
-import Layout from "./layout";
-import About from "./pages/about";
-import CV from "./pages/cv";
-import Now from "./pages/now";
-import Projects from "./pages/projects";
+import { ErrorBoundary } from "@sentry/react"
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+import Markdown from "./components/markdown"
+import CV from "./pages/cv"
+import Home from "./pages/home"
+import NotFound from "./pages/notFound"
+import Now from "./pages/now"
+import posts from "./posts"
 
-function App() {
+// TODO: Add a proper error component.
+const App = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          {/* Base routes */}
-          <Route index element={<About />} />
-          <Route path="projects" element={<Projects />} />
-          <Route path="cv" element={<CV />} />
-          <Route path="now" element={<Now />} />
+    <Router>
+      <ErrorBoundary fallback={<p>An error has occurred</p>}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/cv" element={<CV />} />
+          <Route path="/now" element={<Now />} />
 
-          {/* 404 redirect */}
-          <Route path="*" element={<Navigate to="/" />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
-  );
+          {posts.map(({ path, content, title, date }) => {
+            const id = path.split("/").pop()
+
+            return (
+              <Route
+                key={path}
+                path={path}
+                element={<Markdown id={id} markdown={content} title={title} date={date} />}
+              />
+            )
+          })}
+
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </ErrorBoundary>
+    </Router>
+  )
 }
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+export default App

@@ -2,98 +2,78 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Applying font. */
 body {
-  background-color: #0d1117;
+  @apply bg-zinc-200 font-sans text-zinc-800 text-lg leading-7;
 }
 
-/* https://github.com/tholman/github-corners */
-.github-corner:hover .octo-arm {
-  animation: octocat-wave 560ms ease-in-out;
-}
-@keyframes octocat-wave {
-  0%,
-  100% {
-    transform: rotate(0);
-  }
-  20%,
-  60% {
-    transform: rotate(-25deg);
-  }
-  40%,
-  80% {
-    transform: rotate(10deg);
-  }
-}
-@media (max-width: 500px) {
-  .github-corner:hover .octo-arm {
-    animation: none;
-  }
-  .github-corner .octo-arm {
-    animation: octocat-wave 560ms ease-in-out;
-  }
+/* Base styles from GitHub Markdown. */
+/* Headings. */
+h1,
+h2,
+h3 {
+  @apply text-zinc-200 text-xl font-semibold;
 }
 
-/* See: https://github.com/twitter/twemoji#inline-styles */
-img.emoji {
-  display: inline;
-  height: 1em;
-  margin: 0 0.05em 0 0.1em;
-  vertical-align: -0.1em;
-  width: 1em;
+h1 {
+  @apply mt-8 mb-4;
 }
 
-/* ℹ️ <section> is used to wrap an MDX import and apply styles. */
-@layer components {
-  section a {
-    @apply border-b-2 border-indigo-400 text-indigo-400 hover:bg-indigo-400 hover:text-white;
-  }
+h2 {
+  @apply mt-6 mb-4;
+}
 
-  section ul {
-    @apply pb-4 space-y-2;
-  }
+h3 {
+  @apply mt-6 mb-4;
+}
 
-  .now-page ul {
-    @apply list-dash ml-3 pb-4;
-  }
+/* Paragraphs. */
+p {
+  @apply mb-4;
+}
 
-  section p {
-    @apply pb-4;
-  }
+/* Links. */
+a {
+  @apply border-b-2 border-zinc-500;
+}
 
-  .about-page li svg {
-    @apply inline;
-    margin-right: 8px;
-  }
+/* Blockquotes. */
+blockquote {
+  @apply border-l-2 border-zinc-300 pl-4 mb-4;
+}
 
-  .about-page li {
-    @apply flex;
-  }
+/* Formatting. */
+strong {
+  @apply font-semibold;
+}
 
-  .about-page li svg {
-    @apply flex-shrink-0 mt-1;
-  }
+/* Lists. */
+ol,
+ul {
+  @apply list-outside mb-4 ml-4;
+}
 
-  .about-page ul {
-    @apply list-inside;
-  }
+ul {
+  @apply list-disc;
+}
 
-  .now-page ul {
-    @apply list-dash ml-3;
-  }
+ol {
+  @apply list-decimal;
+}
 
-  .now-page ul li ul li:first-child {
-    @apply pt-2;
-  }
+li {
+  @apply mb-1;
+}
 
-  .now-page ul li ul {
-    @apply pb-0;
-  }
+/* Images. */
+img {
+  @apply rounded-lg mb-4;
+}
 
-  .now-page blockquote {
-    @apply border-l-4 border-slate-300 italic mb-2 pl-2 py-1.5 text-slate-300;
-  }
-
-  .now-page blockquote p {
-    @apply pb-0.5;
-  }
+/* Code blocks. */
+pre {
+  @apply bg-zinc-900 text-zinc-200 pt-3 px-4 pb-4 rounded-lg mb-4;
+}
+code {
+  @apply text-sm font-mono;
 }

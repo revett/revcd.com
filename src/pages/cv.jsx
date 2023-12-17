@@ -1,29 +1,29 @@
-import React, { useEffect } from "react";
-import Page from "../components/page";
-import CVMDX from "./content/cv.mdx";
+import { Link } from "react-router-dom"
+import Container from "../components/container"
 
 const CV = () => {
-  useEffect(() => {
-    // Update title.
-    document.title = "Charlie Revett (@revcd) • CV";
-
-    // Update favicon.
-    const favicon = document.getElementById("favicon");
-    const replacement = document.getElementById("card-index-favicon");
-    favicon.href = replacement.src;
-
-    // Update GitHub corner link.
-    const githubCorner = document.getElementById("github-corner");
-    githubCorner.href = "https://github.com/revett/revcd.com";
-  }, []);
-
   return (
-    <Page>
-      <section>
-        <CVMDX />
-      </section>
-    </Page>
-  );
-};
+    <Container>
+      <p>
+        <Link to="/">charlie revett</Link> / cv
+      </p>
 
-export default CV;
+      <h1>CV / Resume</h1>
+
+      <p>
+        Hey, I&apos;m Charlie Revett. I&apos;m a software engineer living in London, on the
+        incident.io 👨‍🚒 team as a Senior Product Engineer. Check out what I&apos;m up to now or drop
+        me an email.
+      </p>
+
+      <p>Previously I have worked as:</p>
+      <ul>
+        <li>Staff Software Engineer at Vidsy</li>
+        <li>Chief Technology Officer (CTO) at Vidsy</li>
+        <li>Senior Software Engineer at BBC News</li>
+      </ul>
+    </Container>
+  )
+}
+
+export default CV
