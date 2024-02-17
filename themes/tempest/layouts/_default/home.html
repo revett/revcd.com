@@ -1,13 +1,27 @@
 {{ define "main" }}
-  <div class="page-home grid grid-cols-1 gap-4">
-    <div>
-      <img class="h-12 shadow mb-2 rounded-full" src="/me.avif" />
-      {{ .Content }}
-    </div>
-    <div>
+  <section class="text-neutral-300">
+    <p class="text-neutral-50">Hey. I'm Charlie, a software engineer based in London.</p>
+    {{ .Content }}
+  </section>
+
+  <section>
+    <h2>Links</h2>
+    <ul>
+      <li><a href="mailto:hi@revdex.fastmail.com">Email</a></li>
+      <li><a href="https://linkedin.com/in/cdrev" target="_blank">Linkedin</a></li>
+      <li><a href="https://github.com/revett" target="_blank">GitHub</a></li>
+      <li><a href="https://twitter.com/revcd" target="_blank">Twitter</a></li>
+      <li><a href="https://instagram.com/cdrev" target="_blank">Instagram</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><a href="/posts">Posts</a></h2>
+
+    <ul>
       {{ range site.RegularPages }}
-        <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+        <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
       {{ end }}
-    </div>
-  </div>
+    </ul>
+  </section>
 {{ end }}

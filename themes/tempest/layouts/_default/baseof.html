@@ -3,14 +3,16 @@
 <head>
   {{ partial "head.html" . }}
 </head>
-<body>
-  <div class="max-w-2xl m-6 grid grid-cols-1 gap-4 font-pt-sans">
-    <header>
+<body class="bg-neutral-900 text-neutral-50 font-custom-sans">
+  <div class="max-w-[600px] mx-16 my-16">
+    <header class="mb-8">
       {{ partial "header.html" . }}
     </header>
-    <main>
+
+    <main mb-8>
         {{ block "main" . }}{{ end }}
     </main>
+
     <footer>
       {{ partial "footer.html" . }}
     </footer>

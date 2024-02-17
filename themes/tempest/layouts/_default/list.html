@@ -1,17 +1,17 @@
 {{ define "main" }}
-  <div class="grid grid-cols-1 gap-4">
-    <div>
-      <h1>{{ .Title }}</h1>
-    </div>
+  <section>
+    <h1>{{ .Title }}</h1>
 
-    <div>
-      {{ .Content }}
-    </div>
+    {{ .Content }}
+  </section>
 
-    <div>
-      {{ range .Pages }}
-        <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+  <section>
+    <ul class="text-neutral-300">
+      {{ range site.RegularPages }}
+        <li>
+          <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a> ({{ .Params.date.Format "02 Jan 2006" }})
+        </li>
       {{ end }}
-    </div>
-  </div>
+    </ul>
+  </section>
 {{ end }}

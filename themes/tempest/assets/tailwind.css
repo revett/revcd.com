@@ -3,15 +3,33 @@
 @tailwind utilities;
 
 /* Reusable components */
+li a,
+p a {
+  @apply border-b-2 border-red-400 text-neutral-50;
+}
+
+li a:hover,
+p a:hover {
+  @apply text-red-400;
+}
+
 h1,
 h2 {
-  @apply font-bold;
+  @apply font-bold mb-2;
 }
 
-p a {
-  @apply border-b-2 border-red-500 font-bold font-pt-serif italic;
+li {
+  @apply mb-1;
 }
 
-p a:hover {
-  @apply text-red-500;
+p {
+  @apply mb-4;
+}
+
+section {
+  @apply mb-8;
+}
+
+ul {
+  @apply list-['-_'] list-inside mb-4;
 }

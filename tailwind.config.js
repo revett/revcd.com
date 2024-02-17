@@ -4,9 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        "pt-sans": ["PT Sans", "sans-serif"],
-        "pt-serif": ["PT Serif", "serif"],
-        "pt-mono": ["PT Mono", "monospace"],
+        "custom-sans": ["Rubik", "sans-serif"],
       },
     },
   },

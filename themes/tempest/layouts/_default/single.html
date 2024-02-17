@@ -1,19 +1,13 @@
 {{ define "main" }}
-  <div class="grid grid-cols-1 gap-4">
-    <div>
-      <h1>{{ .Title }}</h1>
+  <section>
+    <h1>{{ .Title }}</h1>
 
-      {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-      {{ $dateHuman := .Date | time.Format ":date_long" }}
-      <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
-    </div>
+    {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+    {{ $dateHuman := .Date | time.Format ":date_long" }}
+    <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+  </section>
 
-    <div>
-      {{ .Content }}
-    </div>
-
-    <div>
-      {{ partial "tags.html" (dict "taxonomy" "tags" "page" .) }}
-    </div>
-  </div>
+  <section>
+    {{ .Content }}
+  </section>
 {{ end }}

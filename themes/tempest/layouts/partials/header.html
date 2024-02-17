@@ -1,2 +1,18 @@
-<h1>{{ site.Title }}</h1>
-{{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+<div class="flex items-center space-x-2">
+  <div class="flex-none">
+    <img class="h-12 shadow rounded-full" src="/me.avif" />
+  </div>
+  <div class="flex-1">
+    <a class="text-red-400 border-b-2 border-red-400" href="/">charlie revett</a>
+
+    {{ if .IsHome }}
+      / {{ strings.ToLower .Title }}
+    {{ else if eq "/posts" .RelPermalink  }}
+      / posts
+    {{ else if eq "/posts/" .RelPermalink }}
+      / <a href="/posts">posts</a>
+    {{ else if strings.HasPrefix .RelPermalink "/posts/"  }}
+      / <a href="/posts">posts</a> / {{ .Params.date.Format "02 Jan 2006" }}
+    {{ end }}
+  </div>
+</div>
