@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "tw:build": "npx tailwindcss -i ./themes/tempest/assets/tailwind.css -o ./themes/tempest/assets/tailwind-output.css",
+    "tw:watch": "npx tailwindcss -i ./themes/tempest/assets/tailwind.css -o ./themes/tempest/assets/tailwind-output.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
