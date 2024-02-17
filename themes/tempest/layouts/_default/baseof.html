@@ -4,16 +4,16 @@
   {{ partial "head.html" . }}
 </head>
 <body>
-  <header>
-    {{ partial "header.html" . }}
-  </header>
-  <main>
-    <div class="bg-red-500">
-      {{ block "main" . }}{{ end }}
-    </div>
-  </main>
-  <footer>
-    {{ partial "footer.html" . }}
-  </footer>
+  <div class="max-w-2xl m-6 grid grid-cols-1 gap-4 font-pt-sans">
+    <header>
+      {{ partial "header.html" . }}
+    </header>
+    <main>
+        {{ block "main" . }}{{ end }}
+    </main>
+    <footer>
+      {{ partial "footer.html" . }}
+    </footer>
+  </div>
 </body>
 </html>

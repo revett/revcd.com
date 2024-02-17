@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Reusable components */
+h1,
+h2 {
+  @apply font-bold;
+}
+
+p a {
+  @apply border-b-2 border-red-500 font-bold font-pt-serif italic;
+}
+
+p a:hover {
+  @apply text-red-500;
+}

@@ -1,2 +1,2 @@
 run:
-	hugo server --buildDrafts --port 5173
+	hugo server --buildDrafts --disableFastRender --port 5173
