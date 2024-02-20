@@ -42,3 +42,17 @@ ul {
 ul li ul {
   @apply mt-1 mb-0;
 }
+
+/* Specific styling rules */
+
+#TableOfContents ul {
+  @apply list-none ml-0;
+}
+
+#TableOfContents ul li ul {
+  @apply ml-2;
+}
+
+#TableOfContents ul li a {
+  @apply text-neutral-300 border-neutral-300 hover:text-neutral-50 hover:border-neutral-50 text-sm;
+}
