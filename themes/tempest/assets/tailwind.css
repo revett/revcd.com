@@ -5,12 +5,16 @@
 /* Reusable components */
 li a,
 p a {
-  @apply border-b-2 border-red-400 text-neutral-50;
+  @apply border-b border-red-400 text-neutral-50;
 }
 
 li a:hover,
 p a:hover {
   @apply text-red-400;
+}
+
+blockquote {
+  @apply italic pl-4 border-l-4 border-red-400;
 }
 
 h1,
@@ -23,7 +27,7 @@ li {
 }
 
 p {
-  @apply mb-4;
+  @apply mb-4 leading-7;
 }
 
 section {
@@ -31,5 +35,5 @@ section {
 }
 
 ul {
-  @apply list-['-_'] list-inside mb-4;
+  @apply list-['-_'] mb-4 ml-4;
 }
