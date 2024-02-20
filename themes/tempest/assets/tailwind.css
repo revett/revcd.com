@@ -18,8 +18,9 @@ blockquote {
 }
 
 h1,
-h2 {
-  @apply font-semibold mb-2 text-neutral-50;
+h2,
+h3 {
+  @apply font-semibold mt-1 mb-2 text-neutral-50;
 }
 
 li {
@@ -39,5 +40,5 @@ ul {
 }
 
 ul li ul {
-  @apply mt-1;
+  @apply mt-1 mb-0;
 }
