@@ -39,7 +39,7 @@ I've shared photos on my Instagram from the trip, mostly shot on my Canon AF-7:
 
 - [August 29, 2023](https://www.instagram.com/p/CwhFXZ6tIs-)
 - [September 21, 2023](https://www.instagram.com/p/CxcVA4itRaq)
-- [February 1, 2023](https://www.instagram.com/p/C2y7m15t9HU)
+- [February 1, 2024](https://www.instagram.com/p/C2y7m15t9HU)
 
 ## Credits
 
