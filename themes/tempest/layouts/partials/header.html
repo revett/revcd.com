@@ -2,17 +2,17 @@
   <div class="flex-none">
     <img class="h-12 shadow rounded-full" src="/me.avif" />
   </div>
-  <div class="flex-1 font-semibold">
+  <div class="flex-1">
     <a class="text-red-400 border-b border-red-400" href="/">Charlie Revett</a>
 
     {{ if .IsHome }}
-      / Home
+      / <span class="font-semibold">Home</span>
     {{ else if or (eq "/cv" .RelPermalink) (eq "/cv/" .RelPermalink)  }}
-      / CV
+      / <span class="font-semibold">CV</span>
     {{ else if or (eq "/now" .RelPermalink) (eq "/now/" .RelPermalink)  }}
-      / Now
+      / <span class="font-semibold">Now</span>
     {{ else }}
-      / Posts / {{ .Params.date.Format "02 Jan 2006" }}
+      / Posts / <span class="font-semibold">{{ .Params.date.Format "02 Jan 2006" }}</span>
     {{ end }}
   </div>
 </div>

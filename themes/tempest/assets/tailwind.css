@@ -37,3 +37,7 @@ section {
 ul {
   @apply list-['-_'] mb-4 ml-4;
 }
+
+ul li ul {
+  @apply mt-1;
+}
