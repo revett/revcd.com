@@ -1,6 +1,6 @@
 +++
-title = 'Now: Summer / Autumn 2022'
-date = 2023-01-15T09:00:00-07:00
+title = 'Applying the GitHub Dark Theme to Miniflux with GPT'
+date = 2023-05-06T18:56:00
 draft = false
 +++
 

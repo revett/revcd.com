@@ -1,17 +1,46 @@
 {{ define "main" }}
-  <section class="text-neutral-300">
+  <section>
     <p class="text-neutral-50">Hey. I'm Charlie, a software engineer based in London.</p>
     {{ .Content }}
   </section>
 
   <section>
+    <h2>Pages</h2>
+    <ul>
+      <li><a href="/now">/now</a></li>
+      <li><a href="/cv">/cv</a></li>
+
+    </ul>
+  </section>
+
+  <section>
     <h2>Links</h2>
     <ul>
-      <li><a href="mailto:hi@revdex.fastmail.com">Email</a></li>
-      <li><a href="https://linkedin.com/in/cdrev" target="_blank">Linkedin</a></li>
-      <li><a href="https://github.com/revett" target="_blank">GitHub</a></li>
-      <li><a href="https://twitter.com/revcd" target="_blank">Twitter</a></li>
-      <li><a href="https://instagram.com/cdrev" target="_blank">Instagram</a></li>
+      <li>
+        <a href="mailto:hi@revdex.fastmail.com">
+          Email
+        </a>
+      </li>
+      <li>
+        <a class="border-slate-500 hover:text-slate-500" href="https://linkedin.com/in/cdrev" target="_blank">
+          LinkedIn
+        </a>
+      </li>
+      <li>
+        <a class="border-green-600 hover:text-green-600" href="https://github.com/revett" target="_blank">
+          GitHub
+        </a>
+      </li>
+      <li>
+        <a class="border-blue-400 hover:text-blue-400" href="https://twitter.com/revcd" target="_blank">
+          Twitter
+        </a>
+      </li>
+      <li>
+        <a class="border-blue-700 hover:text-blue-700" href="https://instagram.com/cdrev" target="_blank">
+          Instagram
+        </a>
+      </li>
     </ul>
   </section>
 
@@ -19,7 +48,14 @@
     <h2><a href="/posts">Posts</a></h2>
 
     <ul>
-      {{ range site.RegularPages }}
+      {{ range site.Pages }}
+        {{ if eq .RelPermalink "/" }}
+          {{ continue }}
+        {{ else if eq .RelPermalink "/now/" }}
+          {{ continue }}
+        {{ else if eq .RelPermalink "/cv/" }}
+          {{ continue }}
+        {{ end }}
         <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
       {{ end }}
     </ul>

@@ -15,7 +15,7 @@ p a:hover {
 
 h1,
 h2 {
-  @apply font-bold mb-2;
+  @apply font-bold mb-2 text-neutral-50;
 }
 
 li {

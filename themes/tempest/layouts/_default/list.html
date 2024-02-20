@@ -6,7 +6,7 @@
   </section>
 
   <section>
-    <ul class="text-neutral-300">
+    <ul>
       {{ range site.RegularPages }}
         <li>
           <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a> ({{ .Params.date.Format "02 Jan 2006" }})
