@@ -1,6 +1,6 @@
 {{ define "main" }}
   <section>
-    <h2 class="custom-sans-title">About</h2>
+    <h2 class="custom-sans-title">01 - About</h2>
 
     <p>
       <span class="text-neutral-50">Hey. I'm Charlie, a software engineer based in London.</span>
@@ -11,7 +11,7 @@
   </section>
 
   <section>
-    <h2 class="custom-sans-title">Pages</h2>
+    <h2 class="custom-sans-title">02 - Pages</h2>
     <ul>
       <li><a href="/now">/now</a></li>
       <li><a href="/cv">/cv</a></li>
@@ -19,11 +19,16 @@
   </section>
 
   <section>
-    <h2 class="custom-sans-title">Links</h2>
+    <h2 class="custom-sans-title">03 - Links</h2>
     <ul>
       <li>
-        <a href="mailto:hi@revdex.fastmail.com">
-          Email
+        <a class="border-blue-400 hover:text-blue-400" href="https://twitter.com/revcd" target="_blank">
+          Twitter
+        </a>
+      </li>
+      <li>
+        <a class="border-blue-700 hover:text-blue-700" href="https://instagram.com/cdrev" target="_blank">
+          Instagram
         </a>
       </li>
       <li>
@@ -37,20 +42,15 @@
         </a>
       </li>
       <li>
-        <a class="border-blue-400 hover:text-blue-400" href="https://twitter.com/revcd" target="_blank">
-          Twitter
-        </a>
-      </li>
-      <li>
-        <a class="border-blue-700 hover:text-blue-700" href="https://instagram.com/cdrev" target="_blank">
-          Instagram
+        <a href="mailto:hi@revdex.fastmail.com">
+          Email
         </a>
       </li>
     </ul>
   </section>
 
   <section>
-    <h2 class="custom-sans-title"><a href="/posts">Recent Posts</a></h2>
+    <h2 class="custom-sans-title"><a href="/posts">04 - Recent Posts</a></h2>
 
     <ul>
       {{ range site.Pages }}
