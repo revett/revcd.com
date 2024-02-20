@@ -5,7 +5,7 @@
 /* Reusable components */
 li a,
 p a {
-  @apply border-b italic text-neutral-50 hover:border-b-0;
+  @apply border-b italic text-neutral-50 hover:border-b-0 hover:bg-neutral-50 hover:text-neutral-950;
 }
 
 blockquote {
@@ -53,5 +53,5 @@ ul li ul {
 }
 
 #TableOfContents ul li a {
-  @apply text-neutral-400 border-neutral-400 hover:text-neutral-50 hover:border-neutral-50 text-sm not-italic;
+  @apply text-neutral-400 border-neutral-400 text-sm not-italic hover:bg-neutral-50 hover:text-neutral-950;
 }
