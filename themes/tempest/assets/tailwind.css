@@ -5,12 +5,7 @@
 /* Reusable components */
 li a,
 p a {
-  @apply border-b border-red-400 text-neutral-50;
-}
-
-li a:hover,
-p a:hover {
-  @apply text-red-400;
+  @apply border-b italic text-neutral-50 hover:border-b-0;
 }
 
 blockquote {
@@ -28,7 +23,7 @@ li {
 }
 
 p {
-  @apply mb-4 leading-6;
+  @apply mb-4 leading-7;
 }
 
 section {
@@ -46,7 +41,7 @@ ul li ul {
 /* Specific styling rules */
 
 .custom-sans-title {
-  @apply font-bold font-custom-sans text-xs text-neutral-50 uppercase;
+  @apply font-bold font-custom-sans text-xs text-neutral-50 uppercase tracking-wider;
 }
 
 #TableOfContents ul {
@@ -58,5 +53,5 @@ ul li ul {
 }
 
 #TableOfContents ul li a {
-  @apply text-neutral-300 border-neutral-300 hover:text-neutral-50 hover:border-neutral-50 text-sm;
+  @apply text-neutral-400 border-neutral-400 hover:text-neutral-50 hover:border-neutral-50 text-sm not-italic;
 }
