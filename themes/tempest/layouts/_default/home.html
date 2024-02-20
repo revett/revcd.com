@@ -1,20 +1,21 @@
 {{ define "main" }}
   <section>
+    <h2 class="custom-sans-title">ABOUT</h2>
+
     <p class="text-neutral-50">Hey. I'm Charlie, a software engineer based in London.</p>
     {{ .Content }}
   </section>
 
   <section>
-    <h2>Pages</h2>
+    <h2 class="custom-sans-title">Pages</h2>
     <ul>
       <li><a href="/now">/now</a></li>
       <li><a href="/cv">/cv</a></li>
-
     </ul>
   </section>
 
   <section>
-    <h2>Links</h2>
+    <h2 class="custom-sans-title">Links</h2>
     <ul>
       <li>
         <a href="mailto:hi@revdex.fastmail.com">
@@ -45,7 +46,7 @@
   </section>
 
   <section>
-    <h2><a href="/posts">Recent Posts</a></h2>
+    <h2 class="custom-sans-title"><a href="/posts">Recent Posts</a></h2>
 
     <ul>
       {{ range site.Pages }}

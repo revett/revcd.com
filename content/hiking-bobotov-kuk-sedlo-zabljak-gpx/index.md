@@ -23,13 +23,13 @@ Hope these help, and enjoy! This ended up being one of my favourite day hikes Iâ
 
 ### Sedlo to Summit
 
-[GPX](bobotov-kuk-sedlo-to-summit.gpx)
+Download: [GPX](bobotov-kuk-sedlo-to-summit.gpx)
 
 ![Map](bobotov-kuk-sedlo-to-summit.png)
 
 ### Å½abljak to Summit
 
-[GPX](bobotov-kuk-zabljak-to-summit.gpx)
+Download: [GPX](bobotov-kuk-zabljak-to-summit.gpx)
 
 ![Map](bobotov-kuk-zabljak-to-summit.png)
 

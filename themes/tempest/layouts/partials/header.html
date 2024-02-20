@@ -1,18 +1,18 @@
-<div class="flex items-center space-x-2">
+<div class="flex items-center space-x-2 custom-sans-title">
   <div class="flex-none">
     <img class="h-12 shadow rounded-full" src="/me.avif" />
   </div>
   <div class="flex-1">
-    <a class="text-red-400 border-b border-red-400" href="/">Charlie Revett</a>
+    <a class="text-red-400 hover:border-b hover:border-red-400" href="/">Charlie Revett</a>
 
     {{ if .IsHome }}
-      / <span class="font-semibold">Home</span>
+      / <span class="font-bold">Home</span>
     {{ else if or (eq "/cv" .RelPermalink) (eq "/cv/" .RelPermalink)  }}
-      / <span class="font-semibold">CV</span>
+      / <span class="font-bold">CV</span>
     {{ else if or (eq "/now" .RelPermalink) (eq "/now/" .RelPermalink)  }}
-      / <span class="font-semibold">Now</span>
+      / <span class="font-bold">Now</span>
     {{ else }}
-      / Posts / <span class="font-semibold">{{ .Params.date.Format "02 Jan 2006" }}</span>
+      / Posts / <span class="font-bold">{{ .Params.date.Format "02 Jan 2006" }}</span>
     {{ end }}
   </div>
 </div>

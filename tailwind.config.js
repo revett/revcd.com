@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        // "custom-sans": ["Rubik", "sans-serif"],
-        "custom-serif": ["Lora", "serif"],
+        "custom-sans": ["Work Sans", "sans-serif"],
+        "custom-serif": ["Cardo", "serif"],
       },
     },
   },

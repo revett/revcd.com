@@ -20,7 +20,7 @@ blockquote {
 h1,
 h2,
 h3 {
-  @apply font-semibold mt-1 mb-2 text-neutral-50;
+  @apply font-semibold font-custom-sans mt-1 mb-2 text-neutral-50;
 }
 
 li {
@@ -28,7 +28,7 @@ li {
 }
 
 p {
-  @apply mb-4 leading-7;
+  @apply mb-4 leading-6;
 }
 
 section {
@@ -45,8 +45,12 @@ ul li ul {
 
 /* Specific styling rules */
 
+.custom-sans-title {
+  @apply font-bold font-custom-sans text-xs text-neutral-50 uppercase;
+}
+
 #TableOfContents ul {
-  @apply list-none ml-0;
+  @apply font-custom-sans list-none ml-0;
 }
 
 #TableOfContents ul li ul {

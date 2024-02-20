@@ -4,7 +4,8 @@ date = 2023-05-29T08:30:00
 draft = false
 +++
 
-> What is a /now page? An idea by [Derek Sivers](https://sive.rs), more details on
+> A now page is an occasionally updated summary of what I'm working on and what I'm thinking about.
+> An idea by [Derek Sivers](https://sive.rs), more details on
 > [his website](https://nownownow.com/about).
 
 - A lot more bouldering with trips to [Albarracín](https://www.instagram.com/p/Cqmn_KntISY) 🇪🇸 and
