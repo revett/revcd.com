@@ -4,3 +4,6 @@ title = "Charlie Revett (@revcd)"
 theme = "tempest"
 disableKinds = ["taxonomy", "term"]
 enableRobotsTXT = true
+
+[sitemap]
+  filename = 'sitemap.xml'
