@@ -1,5 +1,5 @@
 baseURL = "https://revcd.com"
 languageCode = "en-gb"
-title = "Charlie Revett (@revcd) - Software Engineer"
+title = "Charlie Revett (@revcd)"
 theme = "tempest"
 disableKinds = ["taxonomy", "term"]

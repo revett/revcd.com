@@ -43,7 +43,6 @@ ul li ul {
   @apply mt-1 mb-0;
 }
 
-/* TODO: Simplify this section, I think it is hard to follow. */
 /* Specific styling rules */
 
 .custom-sans-title {
@@ -59,5 +58,5 @@ ul li ul {
 }
 
 #TableOfContents ul li a {
-  @apply border-neutral-400 not-italic text-neutral-400 hover:text-neutral-50 text-sm hover:bg-neutral-950;
+  @apply border-neutral-500 not-italic text-neutral-500 hover:text-neutral-50 text-sm hover:bg-neutral-950;
 }
