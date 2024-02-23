@@ -17,6 +17,10 @@ blockquote {
   @apply border-l-4 border-neutral-600 italic pl-4;
 }
 
+code {
+  @apply text-[14px];
+}
+
 h1,
 h2,
 h3 {
@@ -27,8 +31,25 @@ li {
   @apply mb-1;
 }
 
+ol,
+ul {
+  @apply mb-4 ml-4;
+}
+
+ol {
+  @apply list-decimal;
+}
+
 p {
   @apply mb-4 leading-7;
+}
+
+pre {
+  @apply bg-neutral-950 mb-4 py-4 px-5 rounded-lg shadow whitespace-pre-wrap;
+}
+
+pre code {
+  @apply text-neutral-300;
 }
 
 section {
@@ -36,7 +57,7 @@ section {
 }
 
 ul {
-  @apply list-['-_'] mb-4 ml-4;
+  @apply list-['-_'];
 }
 
 ul li ul {
