@@ -6,8 +6,8 @@ draft = false
 
 ## Introduction
 
-> [Miniflux](https://github.com/miniflux/v2) is a "minimalist and opinionated feed reader" mainly
-> used for RSS that you can selfhost.
+> _[Miniflux](https://github.com/miniflux/v2) is a "minimalist and opinionated feed reader" mainly
+> used for RSS that you can selfhost_.
 
 I use the [GitHub dark theme](https://github.com/vv9k/vim-github-dark) for both my
 [VS Code](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme) and

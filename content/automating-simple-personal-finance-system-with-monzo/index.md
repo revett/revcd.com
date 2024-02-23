@@ -6,8 +6,8 @@ draft = false
 
 ## Introduction
 
-> [Monzo](https://monzo.com) is a UK-based digital banking platform that provides users with a
-> mobile app for accessing a wide range of financial services and tools.
+> _[Monzo](https://monzo.com) is a UK-based digital banking platform that provides users with a
+> mobile app for accessing a wide range of financial services and tools_.
 
 Two friends from work were interested in understanding how you can use [Monzo](https://monzo.com)
 for an automated personal finance setup. I think a practical example would be useful for others, so

@@ -4,9 +4,9 @@ date = 2022-11-30T11:23:00
 draft = false
 +++
 
-> A now page is an occasionally updated summary of what I'm working on and what I'm thinking about.
+> _A now page is an occasionally updated summary of what I'm working on and what I'm thinking about.
 > An idea by [Derek Sivers](https://sive.rs), more details on
-> [his website](https://nownownow.com/about).
+> [his website](https://nownownow.com/about)._
 
 - Completing the renovation of my apartment in Bermondsey
 - Catching up on travelling: Brooklyn 🇺🇸, Barcelona 🇪🇸, Lyon 🇫🇷, Saalbach 🇦🇹, and Lisbon 🇵🇹

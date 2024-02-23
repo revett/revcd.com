@@ -14,7 +14,11 @@ p a {
 }
 
 blockquote {
-  @apply border-l-4 border-neutral-600 italic pl-4;
+  @apply border-l-4 border-neutral-600 mb-4 pl-4;
+}
+
+blockquote p {
+  @apply mb-2;
 }
 
 code {
