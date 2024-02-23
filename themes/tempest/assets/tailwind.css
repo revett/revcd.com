@@ -18,7 +18,7 @@ blockquote {
 }
 
 code {
-  @apply text-[14px];
+  @apply font-custom-mono text-[14px];
 }
 
 h1,

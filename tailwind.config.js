@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         "custom-sans": ["Work Sans", "sans-serif"],
         "custom-serif": ["Cardo", "serif"],
+        "custom-mono": ["Space Mono", "monospace"],
       },
     },
   },
