@@ -1,5 +1,5 @@
 +++
-title = 'Hiking Bobotov Kuk - Sedlo to Žabljak GPX Routes'
+title = 'Hiking Bobotov Kuk → Sedlo to Žabljak GPX Routes'
 date = 2023-08-26T09:42:00
 draft = false
 +++

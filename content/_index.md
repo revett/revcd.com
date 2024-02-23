@@ -4,9 +4,6 @@ date = 2022-06-14T20:48:00
 draft = false
 +++
 
-I'm currently a senior product engineer at [incident.io](https://incident.io), helping companies
-like _Airbnb_ and _Netflix_ to improve their incident management process.
-
 Previously, I led product development at [vidsy.co](https://vidsy.co) as the CTO, helping companies
 like _L'Oréal_ and _Activision_ scale to produce thousands of video ads per year.
 
