@@ -1,3 +1,7 @@
+> ⚠️ Project is **archived** (February 2024).
+>
+> _I use [Super](https://super.so/) and [Notion](https://www.notion.so) now, to keep things simple._ 
+
 # revcd.com
 
 Codebase for my personal website.
